@@ -32,14 +32,12 @@
             this.Menu = new System.Windows.Forms.Button();
             this.Library = new System.Windows.Forms.Button();
             this.Actions = new System.Windows.Forms.Button();
-            this.Location = new System.Windows.Forms.Button();
+            this.btnLocation = new System.Windows.Forms.Button();
             this.Contact = new System.Windows.Forms.Button();
             this.Emergency = new System.Windows.Forms.Button();
             this.Back = new System.Windows.Forms.Button();
             this.Options = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Copy = new System.Windows.Forms.Button();
             this.Keyboard = new System.Windows.Forms.Button();
@@ -49,8 +47,10 @@
             this.Speak = new System.Windows.Forms.Button();
             this.Interpellate = new System.Windows.Forms.Button();
             this.ThemeView = new System.Windows.Forms.ListView();
+            this.userControlStandard1 = new WindowsFormsApp1.UserControlStandard();
+            this.userControlReact1 = new WindowsFormsApp1.UserControlReact();
+            this.userControlUrgency1 = new WindowsFormsApp1.UserControlUrgency();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,12 +75,12 @@
             this.Actions.Name = "Actions";
             this.Actions.UseVisualStyleBackColor = true;
             // 
-            // Location
+            // btnLocation
             // 
-            resources.ApplyResources(this.Location, "Location");
-            this.Location.Name = "Location";
-            this.Location.UseVisualStyleBackColor = true;
-            this.Location.Click += new System.EventHandler(this.button4_Click);
+            resources.ApplyResources(this.btnLocation, "btnLocation");
+            this.btnLocation.Name = "btnLocation";
+            this.btnLocation.UseVisualStyleBackColor = true;
+            this.btnLocation.Click += new System.EventHandler(this.button4_Click);
             // 
             // Contact
             // 
@@ -121,25 +121,11 @@
             this.tableLayoutPanel2.Controls.Add(this.Emergency, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.Back, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.Library, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Location, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnLocation, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.Contact, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.Actions, 3, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
-            // 
-            // tableLayoutPanel1
-            // 
-            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
-            this.tableLayoutPanel1.Controls.Add(this.listView1, 0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint_1);
-            // 
-            // listView1
-            // 
-            resources.ApplyResources(this.listView1, "listView1");
-            this.listView1.HideSelection = false;
-            this.listView1.Name = "listView1";
-            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // tableLayoutPanel3
             // 
@@ -211,18 +197,34 @@
             this.ThemeView.Name = "ThemeView";
             this.ThemeView.UseCompatibleStateImageBehavior = false;
             // 
+            // userControlStandard1
+            // 
+            resources.ApplyResources(this.userControlStandard1, "userControlStandard1");
+            this.userControlStandard1.Name = "userControlStandard1";
+            // 
+            // userControlReact1
+            // 
+            resources.ApplyResources(this.userControlReact1, "userControlReact1");
+            this.userControlReact1.Name = "userControlReact1";
+            // 
+            // userControlUrgency1
+            // 
+            resources.ApplyResources(this.userControlUrgency1, "userControlUrgency1");
+            this.userControlUrgency1.Name = "userControlUrgency1";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControlStandard1);
             this.Controls.Add(this.ThemeView);
             this.Controls.Add(this.Interpellate);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.userControlUrgency1);
+            this.Controls.Add(this.userControlReact1);
             this.Name = "Form1";
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -233,13 +235,12 @@
         private System.Windows.Forms.Button Menu;
         private System.Windows.Forms.Button Library;
         private System.Windows.Forms.Button Actions;
-        private System.Windows.Forms.Button Location;
+        private System.Windows.Forms.Button btnLocation;
         private System.Windows.Forms.Button Contact;
         private System.Windows.Forms.Button Emergency;
         private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Button Options;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button Copy;
         private System.Windows.Forms.Button Keyboard;
@@ -249,7 +250,9 @@
         private System.Windows.Forms.Button Speak;
         private System.Windows.Forms.Button Interpellate;
         private System.Windows.Forms.ListView ThemeView;
-        private System.Windows.Forms.ListView listView1;
+        private UserControlStandard userControlStandard1;
+        private UserControlReact userControlReact1;
+        private UserControlUrgency userControlUrgency1;
     }
 }
 
