@@ -56,5 +56,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void userControlLibrary1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

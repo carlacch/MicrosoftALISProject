@@ -29,51 +29,52 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Menu = new System.Windows.Forms.Button();
-            this.Library = new System.Windows.Forms.Button();
-            this.Actions = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnLibrary = new System.Windows.Forms.Button();
+            this.btnActions = new System.Windows.Forms.Button();
             this.btnLocation = new System.Windows.Forms.Button();
-            this.Contact = new System.Windows.Forms.Button();
-            this.Emergency = new System.Windows.Forms.Button();
-            this.Back = new System.Windows.Forms.Button();
-            this.Options = new System.Windows.Forms.Button();
+            this.btnContact = new System.Windows.Forms.Button();
+            this.btnEmergency = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnOptions = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.Copy = new System.Windows.Forms.Button();
-            this.Keyboard = new System.Windows.Forms.Button();
+            this.btnCopy = new System.Windows.Forms.Button();
+            this.btnKeyboard = new System.Windows.Forms.Button();
             this.finalSentence = new System.Windows.Forms.RichTextBox();
-            this.Wand = new System.Windows.Forms.Button();
-            this.Return = new System.Windows.Forms.Button();
-            this.Speak = new System.Windows.Forms.Button();
-            this.Interpellate = new System.Windows.Forms.Button();
+            this.btnWand = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.btnSpeak = new System.Windows.Forms.Button();
             this.ThemeView = new System.Windows.Forms.ListView();
-            this.userControlStandard1 = new WindowsFormsApp1.UserControlStandard();
-            this.userControlReact1 = new WindowsFormsApp1.UserControlReact();
-            this.userControlUrgency1 = new WindowsFormsApp1.UserControlUrgency();
+            this.userControlStandard = new WindowsFormsApp1.UserControlStandard();
+            this.userControlReact = new WindowsFormsApp1.UserControlReact();
+            this.userControlUrgency = new WindowsFormsApp1.UserControlUrgency();
+            this.userControlLibrary = new WindowsFormsApp1.UserControlLibrary();
+            this.userControlLocation = new WindowsFormsApp1.UserControlLibrary();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Menu
+            // btnMenu
             // 
-            this.Menu.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Menu, "Menu");
-            this.Menu.FlatAppearance.BorderSize = 0;
-            this.Menu.Name = "Menu";
-            this.Menu.UseVisualStyleBackColor = false;
+            this.btnMenu.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnMenu, "btnMenu");
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.UseVisualStyleBackColor = false;
             // 
-            // Library
+            // btnLibrary
             // 
-            resources.ApplyResources(this.Library, "Library");
-            this.Library.Name = "Library";
-            this.Library.UseVisualStyleBackColor = true;
-            this.Library.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(this.btnLibrary, "btnLibrary");
+            this.btnLibrary.Name = "btnLibrary";
+            this.btnLibrary.UseVisualStyleBackColor = true;
+            this.btnLibrary.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Actions
+            // btnActions
             // 
-            resources.ApplyResources(this.Actions, "Actions");
-            this.Actions.Name = "Actions";
-            this.Actions.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnActions, "btnActions");
+            this.btnActions.Name = "btnActions";
+            this.btnActions.UseVisualStyleBackColor = true;
             // 
             // btnLocation
             // 
@@ -82,48 +83,48 @@
             this.btnLocation.UseVisualStyleBackColor = true;
             this.btnLocation.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Contact
+            // btnContact
             // 
-            resources.ApplyResources(this.Contact, "Contact");
-            this.Contact.Name = "Contact";
-            this.Contact.UseVisualStyleBackColor = true;
-            this.Contact.Click += new System.EventHandler(this.button6_Click);
+            resources.ApplyResources(this.btnContact, "btnContact");
+            this.btnContact.Name = "btnContact";
+            this.btnContact.UseVisualStyleBackColor = true;
+            this.btnContact.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Emergency
+            // btnEmergency
             // 
-            resources.ApplyResources(this.Emergency, "Emergency");
-            this.Emergency.Name = "Emergency";
-            this.Emergency.UseVisualStyleBackColor = true;
-            this.Emergency.Click += new System.EventHandler(this.button5_Click);
+            resources.ApplyResources(this.btnEmergency, "btnEmergency");
+            this.btnEmergency.Name = "btnEmergency";
+            this.btnEmergency.UseVisualStyleBackColor = true;
+            this.btnEmergency.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Back
+            // btnBack
             // 
-            this.Back.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Back, "Back");
-            this.Back.FlatAppearance.BorderSize = 0;
-            this.Back.Name = "Back";
-            this.Back.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnBack, "btnBack");
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.Name = "btnBack";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
-            // Options
+            // btnOptions
             // 
-            this.Options.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Options, "Options");
-            this.Options.FlatAppearance.BorderSize = 0;
-            this.Options.Name = "Options";
-            this.Options.UseVisualStyleBackColor = false;
-            this.Options.Click += new System.EventHandler(this.button8_Click);
+            this.btnOptions.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnOptions, "btnOptions");
+            this.btnOptions.FlatAppearance.BorderSize = 0;
+            this.btnOptions.Name = "btnOptions";
+            this.btnOptions.UseVisualStyleBackColor = false;
+            this.btnOptions.Click += new System.EventHandler(this.button8_Click);
             // 
             // tableLayoutPanel2
             // 
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.Menu, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Options, 7, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Emergency, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Back, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Library, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnMenu, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnOptions, 7, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnEmergency, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnBack, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnLibrary, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnLocation, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Contact, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.Actions, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnContact, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnActions, 3, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -131,64 +132,58 @@
             // 
             resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel3.Controls.Add(this.Copy, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.Keyboard, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnCopy, 5, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnKeyboard, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.finalSentence, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.Wand, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.Return, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.Speak, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnWand, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnReturn, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnSpeak, 2, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             // 
-            // Copy
+            // btnCopy
             // 
-            this.Copy.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Copy, "Copy");
-            this.Copy.FlatAppearance.BorderSize = 0;
-            this.Copy.Name = "Copy";
-            this.Copy.UseVisualStyleBackColor = false;
+            this.btnCopy.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnCopy, "btnCopy");
+            this.btnCopy.FlatAppearance.BorderSize = 0;
+            this.btnCopy.Name = "btnCopy";
+            this.btnCopy.UseVisualStyleBackColor = false;
             // 
-            // Keyboard
+            // btnKeyboard
             // 
-            this.Keyboard.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Keyboard, "Keyboard");
-            this.Keyboard.FlatAppearance.BorderSize = 0;
-            this.Keyboard.Name = "Keyboard";
-            this.Keyboard.UseVisualStyleBackColor = false;
+            this.btnKeyboard.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnKeyboard, "btnKeyboard");
+            this.btnKeyboard.FlatAppearance.BorderSize = 0;
+            this.btnKeyboard.Name = "btnKeyboard";
+            this.btnKeyboard.UseVisualStyleBackColor = false;
             // 
             // finalSentence
             // 
             resources.ApplyResources(this.finalSentence, "finalSentence");
             this.finalSentence.Name = "finalSentence";
             // 
-            // Wand
+            // btnWand
             // 
-            this.Wand.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Wand, "Wand");
-            this.Wand.FlatAppearance.BorderSize = 0;
-            this.Wand.Name = "Wand";
-            this.Wand.UseVisualStyleBackColor = false;
+            this.btnWand.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnWand, "btnWand");
+            this.btnWand.FlatAppearance.BorderSize = 0;
+            this.btnWand.Name = "btnWand";
+            this.btnWand.UseVisualStyleBackColor = false;
             // 
-            // Return
+            // btnReturn
             // 
-            this.Return.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Return, "Return");
-            this.Return.FlatAppearance.BorderSize = 0;
-            this.Return.Name = "Return";
-            this.Return.UseVisualStyleBackColor = false;
+            this.btnReturn.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnReturn, "btnReturn");
+            this.btnReturn.FlatAppearance.BorderSize = 0;
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.UseVisualStyleBackColor = false;
             // 
-            // Speak
+            // btnSpeak
             // 
-            this.Speak.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Speak, "Speak");
-            this.Speak.FlatAppearance.BorderSize = 0;
-            this.Speak.Name = "Speak";
-            this.Speak.UseVisualStyleBackColor = false;
-            // 
-            // Interpellate
-            // 
-            resources.ApplyResources(this.Interpellate, "Interpellate");
-            this.Interpellate.Name = "Interpellate";
-            this.Interpellate.UseVisualStyleBackColor = true;
+            this.btnSpeak.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.btnSpeak, "btnSpeak");
+            this.btnSpeak.FlatAppearance.BorderSize = 0;
+            this.btnSpeak.Name = "btnSpeak";
+            this.btnSpeak.UseVisualStyleBackColor = false;
             // 
             // ThemeView
             // 
@@ -197,32 +192,44 @@
             this.ThemeView.Name = "ThemeView";
             this.ThemeView.UseCompatibleStateImageBehavior = false;
             // 
-            // userControlStandard1
+            // userControlStandard
             // 
-            resources.ApplyResources(this.userControlStandard1, "userControlStandard1");
-            this.userControlStandard1.Name = "userControlStandard1";
+            resources.ApplyResources(this.userControlStandard, "userControlStandard");
+            this.userControlStandard.Name = "userControlStandard";
             // 
-            // userControlReact1
+            // userControlReact
             // 
-            resources.ApplyResources(this.userControlReact1, "userControlReact1");
-            this.userControlReact1.Name = "userControlReact1";
+            resources.ApplyResources(this.userControlReact, "userControlReact");
+            this.userControlReact.Name = "userControlReact";
             // 
-            // userControlUrgency1
+            // userControlUrgency
             // 
-            resources.ApplyResources(this.userControlUrgency1, "userControlUrgency1");
-            this.userControlUrgency1.Name = "userControlUrgency1";
+            resources.ApplyResources(this.userControlUrgency, "userControlUrgency");
+            this.userControlUrgency.Name = "userControlUrgency";
+            // 
+            // userControlLibrary
+            // 
+            resources.ApplyResources(this.userControlLibrary, "userControlLibrary");
+            this.userControlLibrary.Name = "userControlLibrary";
+            this.userControlLibrary.Load += new System.EventHandler(this.userControlLibrary1_Load);
+            // 
+            // userControlLocation
+            // 
+            resources.ApplyResources(this.userControlLocation, "userControlLocation");
+            this.userControlLocation.Name = "userControlLocation";
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.userControlStandard1);
+            this.Controls.Add(this.userControlLibrary);
+            this.Controls.Add(this.userControlStandard);
             this.Controls.Add(this.ThemeView);
-            this.Controls.Add(this.Interpellate);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.userControlUrgency1);
-            this.Controls.Add(this.userControlReact1);
+            this.Controls.Add(this.userControlUrgency);
+            this.Controls.Add(this.userControlReact);
+            this.Controls.Add(this.userControlLocation);
             this.Name = "Form1";
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -232,27 +239,28 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button Menu;
-        private System.Windows.Forms.Button Library;
-        private System.Windows.Forms.Button Actions;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnLibrary;
+        private System.Windows.Forms.Button btnActions;
         private System.Windows.Forms.Button btnLocation;
-        private System.Windows.Forms.Button Contact;
-        private System.Windows.Forms.Button Emergency;
-        private System.Windows.Forms.Button Back;
-        private System.Windows.Forms.Button Options;
+        private System.Windows.Forms.Button btnContact;
+        private System.Windows.Forms.Button btnEmergency;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnOptions;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Button Copy;
-        private System.Windows.Forms.Button Keyboard;
+        private System.Windows.Forms.Button btnCopy;
+        private System.Windows.Forms.Button btnKeyboard;
         private System.Windows.Forms.RichTextBox finalSentence;
-        private System.Windows.Forms.Button Wand;
-        private System.Windows.Forms.Button Return;
-        private System.Windows.Forms.Button Speak;
-        private System.Windows.Forms.Button Interpellate;
+        private System.Windows.Forms.Button btnWand;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnSpeak;
         private System.Windows.Forms.ListView ThemeView;
-        private UserControlStandard userControlStandard1;
-        private UserControlReact userControlReact1;
-        private UserControlUrgency userControlUrgency1;
+        private UserControlStandard userControlStandard;
+        private UserControlReact userControlReact;
+        private UserControlUrgency userControlUrgency;
+        private UserControlLibrary userControlLibrary;
+        private UserControlLibrary userControlLocation;
     }
 }
 

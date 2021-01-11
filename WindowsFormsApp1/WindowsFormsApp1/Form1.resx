@@ -58,17 +58,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Menu.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnMenu.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Menu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Menu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnMenu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="Menu.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnMenu.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHESURBVFhH7ZZL
@@ -83,89 +83,89 @@
 </value>
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Menu.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnMenu.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>3, 4</value>
   </data>
-  <data name="Menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Menu.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnMenu.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>47, 49</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
-  <data name="Menu.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnMenu.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;Menu.Name" xml:space="preserve">
-    <value>Menu</value>
+  <data name="&gt;&gt;btnMenu.Name" xml:space="preserve">
+    <value>btnMenu</value>
   </data>
-  <data name="&gt;&gt;Menu.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Menu.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnMenu.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Menu.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnMenu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Library.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnLibrary.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Library.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnLibrary.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>236, 4</value>
   </data>
-  <data name="Library.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnLibrary.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Library.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnLibrary.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>174, 49</value>
   </data>
-  <data name="Library.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnLibrary.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
   </data>
-  <data name="Library.Text" xml:space="preserve">
+  <data name="btnLibrary.Text" xml:space="preserve">
     <value>Bibliothèque</value>
   </data>
-  <data name="&gt;&gt;Library.Name" xml:space="preserve">
-    <value>Library</value>
+  <data name="&gt;&gt;btnLibrary.Name" xml:space="preserve">
+    <value>btnLibrary</value>
   </data>
-  <data name="&gt;&gt;Library.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnLibrary.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Library.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLibrary.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Library.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLibrary.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="Actions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnActions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Actions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnActions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>416, 4</value>
   </data>
-  <data name="Actions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnActions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Actions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnActions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>174, 49</value>
   </data>
-  <data name="Actions.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnActions.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
   </data>
-  <data name="Actions.Text" xml:space="preserve">
+  <data name="btnActions.Text" xml:space="preserve">
     <value>Routines / Actions</value>
   </data>
-  <data name="&gt;&gt;Actions.Name" xml:space="preserve">
-    <value>Actions</value>
+  <data name="&gt;&gt;btnActions.Name" xml:space="preserve">
+    <value>btnActions</value>
   </data>
-  <data name="&gt;&gt;Actions.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnActions.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Actions.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnActions.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Actions.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnActions.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btnLocation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -198,76 +198,76 @@
   <data name="&gt;&gt;btnLocation.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="Contact.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnContact.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Contact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnContact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>596, 4</value>
   </data>
-  <data name="Contact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnContact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Contact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnContact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>174, 49</value>
   </data>
-  <data name="Contact.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnContact.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
   </data>
-  <data name="Contact.Text" xml:space="preserve">
+  <data name="btnContact.Text" xml:space="preserve">
     <value>Contacts</value>
   </data>
-  <data name="&gt;&gt;Contact.Name" xml:space="preserve">
-    <value>Contact</value>
+  <data name="&gt;&gt;btnContact.Name" xml:space="preserve">
+    <value>btnContact</value>
   </data>
-  <data name="&gt;&gt;Contact.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnContact.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Contact.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnContact.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Contact.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnContact.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="Emergency.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnEmergency.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Emergency.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnEmergency.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>56, 4</value>
   </data>
-  <data name="Emergency.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnEmergency.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Emergency.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnEmergency.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>174, 49</value>
   </data>
-  <data name="Emergency.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnEmergency.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
   </data>
-  <data name="Emergency.Text" xml:space="preserve">
+  <data name="btnEmergency.Text" xml:space="preserve">
     <value>Urgences</value>
   </data>
-  <data name="&gt;&gt;Emergency.Name" xml:space="preserve">
-    <value>Emergency</value>
+  <data name="&gt;&gt;btnEmergency.Name" xml:space="preserve">
+    <value>btnEmergency</value>
   </data>
-  <data name="&gt;&gt;Emergency.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnEmergency.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Emergency.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnEmergency.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Emergency.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnEmergency.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Back.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnBack.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Back.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnBack.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Back.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnBack.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Back.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnBack.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAC
         JAAAAiQBE6t1ZQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGSSURBVFhHxdQ7
@@ -280,43 +280,43 @@
         5Mr6uolqiH4sYrlGCxhFVusn1GRIajIkNRmSmgwnjr4Ah4VWvXtKpk8AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Back.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnBack.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>956, 4</value>
   </data>
-  <data name="Back.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnBack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Back.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnBack.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>47, 49</value>
   </data>
-  <data name="Back.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnBack.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;Back.Name" xml:space="preserve">
-    <value>Back</value>
+  <data name="&gt;&gt;btnBack.Name" xml:space="preserve">
+    <value>btnBack</value>
   </data>
-  <data name="&gt;&gt;Back.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnBack.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Back.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnBack.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Back.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnBack.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Options.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnOptions.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Options.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnOptions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Options.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnOptions.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Options.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnOptions.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMCSURBVFhHxdfJ
+        5QAAAOUBj+WbPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMCSURBVFhHxdfJ
         rg1RFMbxi5AQwVg3ICGakYcQMWdCTHgG7UAT7ZCJbki0j2CqeQG9iJG+GWkSBN+vnH1v3XKq7rlyLl/y
         T2rtvWrtXXuv3dTIX2hWOB5ehJ89PB8LM8OU61DQ6KfwtIdnZQfClOtJ+BoWV9ZvLQnKHlfWELQ8XA/3
         w6WwNNCK8CW8q6zxUqaOD3nnchDjWhBzIK0LH0KZX7wON8KPnv0gNKVMHR++3qnHEFPsTullafxEmB1O
@@ -333,28 +333,28 @@
         gg==
 </value>
   </data>
-  <data name="Options.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnOptions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>1009, 4</value>
   </data>
-  <data name="Options.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Options.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnOptions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>52, 49</value>
   </data>
-  <data name="Options.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnOptions.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;Options.Name" xml:space="preserve">
-    <value>Options</value>
+  <data name="&gt;&gt;btnOptions.Name" xml:space="preserve">
+    <value>btnOptions</value>
   </data>
-  <data name="&gt;&gt;Options.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnOptions.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Options.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnOptions.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnOptions.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel2.AutoSize" type="System.Boolean, System.Private.CoreLib">
@@ -397,13 +397,85 @@
     <value>4</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Menu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Options" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="Emergency" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="Back" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="Library" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnLocation" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="Contact" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="Actions" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,5,Percent,17,Percent,17,Percent,17,Percent,17,Percent,17,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnMenu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnOptions" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="btnEmergency" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnBack" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="btnLibrary" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnLocation" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="btnContact" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnActions" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,5,Percent,17,Percent,17,Percent,17,Percent,17,Percent,17,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel3.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
+    <value>btnCopy</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnKeyboard.Name" xml:space="preserve">
+    <value>btnKeyboard</value>
+  </data>
+  <data name="&gt;&gt;btnKeyboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnKeyboard.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;btnKeyboard.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;finalSentence.Name" xml:space="preserve">
+    <value>finalSentence</value>
+  </data>
+  <data name="&gt;&gt;finalSentence.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;finalSentence.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;finalSentence.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnWand.Name" xml:space="preserve">
+    <value>btnWand</value>
+  </data>
+  <data name="&gt;&gt;btnWand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnWand.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;btnWand.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.Name" xml:space="preserve">
+    <value>btnReturn</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;btnReturn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnSpeak.Name" xml:space="preserve">
+    <value>btnSpeak</value>
+  </data>
+  <data name="&gt;&gt;btnSpeak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSpeak.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;btnSpeak.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -436,18 +508,18 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Copy" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="Keyboard" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="finalSentence" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Wand" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="Return" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="Speak" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnCopy" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="btnKeyboard" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="finalSentence" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnWand" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnReturn" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnSpeak" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="Copy.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnCopy.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Copy.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnCopy.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Copy.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnCopy.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Copy.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCopy.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFJSURBVFhH7dex
@@ -459,40 +531,40 @@
         T2foCa2ntAYx9ITXu2Jgd4dlrS9e4ip1Rc/8IQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Copy.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnCopy.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>1013, 4</value>
   </data>
-  <data name="Copy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnCopy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Copy.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnCopy.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>48, 52</value>
   </data>
-  <data name="Copy.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnCopy.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;Copy.Name" xml:space="preserve">
-    <value>Copy</value>
+  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
+    <value>btnCopy</value>
   </data>
-  <data name="&gt;&gt;Copy.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Copy.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;Copy.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="Keyboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnKeyboard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Keyboard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnKeyboard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Keyboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnKeyboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Keyboard.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnKeyboard.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFdSURBVFhH3de9
@@ -504,28 +576,28 @@
         LFB3LTcRuxcEC+TKT4Hiu6H+jVKTEo5gn0p0s/C1TGkJ9omoYIz5BPPqFIw4dg/tAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Keyboard.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnKeyboard.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>960, 4</value>
   </data>
-  <data name="Keyboard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnKeyboard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Keyboard.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnKeyboard.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>47, 52</value>
   </data>
-  <data name="Keyboard.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnKeyboard.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;Keyboard.Name" xml:space="preserve">
-    <value>Keyboard</value>
+  <data name="&gt;&gt;btnKeyboard.Name" xml:space="preserve">
+    <value>btnKeyboard</value>
   </data>
-  <data name="&gt;&gt;Keyboard.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnKeyboard.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Keyboard.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnKeyboard.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;Keyboard.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnKeyboard.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="finalSentence.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -561,16 +633,16 @@
   <data name="&gt;&gt;finalSentence.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Wand.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnWand.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Wand.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnWand.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Wand.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnWand.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Wand.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnWand.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGxSURBVFhHxdWx
@@ -584,43 +656,43 @@
         KKr9AgLoohOePmBPAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Wand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnWand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>907, 4</value>
   </data>
-  <data name="Wand.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnWand.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Wand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnWand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>47, 52</value>
   </data>
-  <data name="Wand.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnWand.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;Wand.Name" xml:space="preserve">
-    <value>Wand</value>
+  <data name="&gt;&gt;btnWand.Name" xml:space="preserve">
+    <value>btnWand</value>
   </data>
-  <data name="&gt;&gt;Wand.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnWand.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Wand.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnWand.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;Wand.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnWand.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Return.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnReturn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Return.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnReturn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Return.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnReturn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Return.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnReturn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rgAAAK4B+ff3XQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVFhHxZfB
+        rQAAAK0BVE7WMAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVFhHxZfB
         bcMwFEO9RM7ZojO1a/XSU3LuvRt0iJ67gUs6n18GoRZOoF8ReAgj0+JHEgfQsq7rAp3BG/gCXKiEHew6
         R/dW/g08WA072b1Nw4UP8MSpKmFHdPENu/NjLy8X7IpOdm8G6/1wFepN44Fq1JvGA9WoN40HqlFvGg9U
         o940HvgL6ASu4Ll3/QjQYwNALP+M+y69zBHi/mY80APal/P11MsdIfZoxgMONKycxD7NeGAPNLScxF7N
@@ -629,40 +701,40 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="Return.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnReturn.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>801, 4</value>
   </data>
-  <data name="Return.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnReturn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Return.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnReturn.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>47, 52</value>
   </data>
-  <data name="Return.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnReturn.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;Return.Name" xml:space="preserve">
-    <value>Return</value>
+  <data name="&gt;&gt;btnReturn.Name" xml:space="preserve">
+    <value>btnReturn</value>
   </data>
-  <data name="&gt;&gt;Return.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnReturn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Return.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnReturn.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;Return.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnReturn.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="Speak.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+  <data name="btnSpeak.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="Speak.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnSpeak.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Speak.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnSpeak.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="Speak.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSpeak.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAF
         EAAABRAB94LrIgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKASURBVFhHxZZN
@@ -679,59 +751,29 @@
         /z3gAkvB45L0+yaTIRSrJBSrJBSrJBSrJBSro5b+Ai/pIROmDqIiAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Speak.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="btnSpeak.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>854, 4</value>
   </data>
-  <data name="Speak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btnSpeak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 4, 3, 4</value>
   </data>
-  <data name="Speak.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="btnSpeak.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>47, 52</value>
   </data>
-  <data name="Speak.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnSpeak.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;Speak.Name" xml:space="preserve">
-    <value>Speak</value>
+  <data name="&gt;&gt;btnSpeak.Name" xml:space="preserve">
+    <value>btnSpeak</value>
   </data>
-  <data name="&gt;&gt;Speak.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnSpeak.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Speak.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSpeak.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
   </data>
-  <data name="&gt;&gt;Speak.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnSpeak.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="Interpellate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="Interpellate.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>918, 65</value>
-  </data>
-  <data name="Interpellate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="Interpellate.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>143, 49</value>
-  </data>
-  <data name="Interpellate.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>12</value>
-  </data>
-  <data name="Interpellate.Text" xml:space="preserve">
-    <value>Interpeller</value>
-  </data>
-  <data name="&gt;&gt;Interpellate.Name" xml:space="preserve">
-    <value>Interpellate</value>
-  </data>
-  <data name="&gt;&gt;Interpellate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Interpellate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Interpellate.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="ThemeView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
@@ -758,70 +800,112 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ThemeView.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="userControlStandard1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="userControlStandard.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
   </data>
-  <data name="userControlStandard1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="userControlStandard.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1064, 618</value>
   </data>
-  <data name="userControlStandard1.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="userControlStandard.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;userControlStandard1.Name" xml:space="preserve">
-    <value>userControlStandard1</value>
+  <data name="&gt;&gt;userControlStandard.Name" xml:space="preserve">
+    <value>userControlStandard</value>
   </data>
-  <data name="&gt;&gt;userControlStandard1.Type" xml:space="preserve">
+  <data name="&gt;&gt;userControlStandard.Type" xml:space="preserve">
     <value>WindowsFormsApp1.UserControlStandard, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;userControlStandard1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userControlStandard.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;userControlStandard1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;userControlStandard.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="userControlReact1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="userControlReact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
   </data>
-  <data name="userControlReact1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="userControlReact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1064, 618</value>
   </data>
-  <data name="userControlReact1.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="userControlReact.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;userControlReact1.Name" xml:space="preserve">
-    <value>userControlReact1</value>
+  <data name="&gt;&gt;userControlReact.Name" xml:space="preserve">
+    <value>userControlReact</value>
   </data>
-  <data name="&gt;&gt;userControlReact1.Type" xml:space="preserve">
+  <data name="&gt;&gt;userControlReact.Type" xml:space="preserve">
     <value>WindowsFormsApp1.UserControlReact, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;userControlReact1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userControlReact.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;userControlReact1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;userControlReact.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="userControlUrgency1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="userControlUrgency.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
   </data>
-  <data name="userControlUrgency1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="userControlUrgency.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1064, 618</value>
   </data>
-  <data name="userControlUrgency1.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="userControlUrgency.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;userControlUrgency1.Name" xml:space="preserve">
-    <value>userControlUrgency1</value>
+  <data name="&gt;&gt;userControlUrgency.Name" xml:space="preserve">
+    <value>userControlUrgency</value>
   </data>
-  <data name="&gt;&gt;userControlUrgency1.Type" xml:space="preserve">
+  <data name="&gt;&gt;userControlUrgency.Type" xml:space="preserve">
     <value>WindowsFormsApp1.UserControlUrgency, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;userControlUrgency1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;userControlUrgency.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;userControlUrgency1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;userControlUrgency.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="userControlLibrary.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 61</value>
+  </data>
+  <data name="userControlLibrary.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 618</value>
+  </data>
+  <data name="userControlLibrary.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;userControlLibrary.Name" xml:space="preserve">
+    <value>userControlLibrary</value>
+  </data>
+  <data name="&gt;&gt;userControlLibrary.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlLibrary, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlLibrary.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlLibrary.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="userControlLocation.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 61</value>
+  </data>
+  <data name="userControlLocation.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 618</value>
+  </data>
+  <data name="userControlLocation.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;userControlLocation.Name" xml:space="preserve">
+    <value>userControlLocation</value>
+  </data>
+  <data name="&gt;&gt;userControlLocation.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlLibrary, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlLocation.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlLocation.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
