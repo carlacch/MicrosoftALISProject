@@ -67,11 +67,11 @@
   <data name="Menu.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="Menu.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qwAAAKsB1E2SqwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHESURBVFhH7ZZL
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHESURBVFhH7ZZL
         KAVRHIfHc+EZC4+srC1trOwsLJTsraQUexsLWSql7CSys1Fib0EJpSwkJaRYIPJO3t9vzKm5d+5cc+89
         c0v56qv7P+fM/H9Nd84ZJ0tKcQLv8RnnsArzgpov4xfe4qX3exOrMVb8zfexAStxzRuLNYSaL6EaHWAj
         GspwFTW3g7VolXTNDbGFiNLcYD1EJs0N1kJk09yQc4hcmhuyDmGjuSHjEDabGyKHiKO54dcQcTY3hIYo
@@ -84,10 +84,13 @@
   </data>
   <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Menu.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>3, 3</value>
+    <value>3, 4</value>
+  </data>
+  <data name="Menu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Menu.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>40, 37</value>
+    <value>47, 49</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
   <data name="Menu.TabIndex" type="System.Int32, System.Private.CoreLib">
@@ -109,10 +112,13 @@
     <value>Fill</value>
   </data>
   <data name="Library.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>207, 3</value>
+    <value>236, 4</value>
+  </data>
+  <data name="Library.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Library.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>152, 37</value>
+    <value>174, 49</value>
   </data>
   <data name="Library.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>3</value>
@@ -136,10 +142,13 @@
     <value>Fill</value>
   </data>
   <data name="Actions.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>365, 3</value>
+    <value>416, 4</value>
+  </data>
+  <data name="Actions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Actions.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>152, 37</value>
+    <value>174, 49</value>
   </data>
   <data name="Actions.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>4</value>
@@ -159,41 +168,47 @@
   <data name="&gt;&gt;Actions.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="Location.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="btnLocation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Location.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>681, 3</value>
+  <data name="btnLocation.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>776, 4</value>
   </data>
-  <data name="Location.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>152, 37</value>
+  <data name="btnLocation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
-  <data name="Location.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnLocation.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>174, 49</value>
+  </data>
+  <data name="btnLocation.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
   </data>
-  <data name="Location.Text" xml:space="preserve">
+  <data name="btnLocation.Text" xml:space="preserve">
     <value>Lieux</value>
   </data>
-  <data name="&gt;&gt;Location.Name" xml:space="preserve">
-    <value>Location</value>
+  <data name="&gt;&gt;btnLocation.Name" xml:space="preserve">
+    <value>btnLocation</value>
   </data>
-  <data name="&gt;&gt;Location.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnLocation.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Location.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnLocation.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;Location.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnLocation.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="Contact.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="Contact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>523, 3</value>
+    <value>596, 4</value>
+  </data>
+  <data name="Contact.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Contact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>152, 37</value>
+    <value>174, 49</value>
   </data>
   <data name="Contact.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>5</value>
@@ -217,10 +232,13 @@
     <value>Fill</value>
   </data>
   <data name="Emergency.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>49, 3</value>
+    <value>56, 4</value>
+  </data>
+  <data name="Emergency.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Emergency.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>152, 37</value>
+    <value>174, 49</value>
   </data>
   <data name="Emergency.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
@@ -251,23 +269,25 @@
   </data>
   <data name="Back.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAiUAAAIlAcHsl4EAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABkklEQVRYR8XUO0gDQRCA4dMiYhHFRkHw0YjWNpYW2tlZWCgEUXyUVtqLjY12ltY+CFja2QqCpagI
-        wU4QRBQE8XH+E2/jupmEaG43A1+4m5vMTBI2URzHDaUmQ1KTIanJkNSkIDKYQKf2PC16MoracQq5uUaT
-        VpeG8sTv4eIKYRYg3OEPGLZr0vZz0YDh4vulQcOFhDv8FdMYSsEAMtpgQyIPM9wH+UBn2MGgtkAB7pt8
-        ecEKSqdKYgrvMEWy8QH2UrCPc0hP01/kSwskW8zAXmIXzaaoXkQL1vEGM2O++Mwq8rqEIMbxCbl5Qq9b
-        EGKJraS3WNUK3CW23Zp6ED1W78NKRfYSz0j7W7hLehfUAkFMQs7vmva8HsQN5OJeLfCJ6EiGi2O1yCdi
-        yVpgQy3yheiDHD+5keM4ohb6QIzhFubTF0+XWlwJ0Y0cZms0h02cwPwBiUu0Fnu6QyohsniEafJfR+gq
-        9bWHVEO0wfx+f/WBC+TK+rqJaoh+LGK5RgsYRVbrJ9RkSGoyJDUZkpoMJ46+AIeFVr17SqZPAAAAAElF
-        TkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAC
+        JAAAAiQBE6t1ZQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGSSURBVFhHxdQ7
+        SANBEIDh0yJiEcVGQfDRiNY2lhba2VlYKARRfJRW2ouNjXaW1j4IWNrZCoKlqAjBThBEFATxcf4Tb+O6
+        mYRobjcDX7ibm8xMEjZRHMcNpSZDUpMhqcmQ1KQgMphAp/Y8LXoyitpxCrm5RpNWl4byxO/h4gphFiDc
+        4Q8YtmvS9nPRgOHi+6VBw4WEO/wV0xhKwQAy2mBDIg8z3Af5QGfYwaC2QAHum3x5wQpKp0piCu8wRbLx
+        AfZSsI9zSE/TX+RLCyRbzMBeYhfNpqheRAvW8QYzY774zCryuoQgxvEJuXlCr1sQYomtpLdY1QrcJbbd
+        mnoQPVbvw0pF9hLPSPtbuEt6F9QCQUxCzu+a9rwexA3k4l4t8InoSIaLY7XIJ2LJWmBDLfKF6IMcP7mR
+        4ziiFvpAjOEW5tMXT5daXAnRjRxmazSHTZzA/AGJS7QWe7pDKiGyeIRp8l9H6Cr1tYdUQ7TB/H5/9YEL
+        5Mr6uolqiH4sYrlGCxhFVusn1GRIajIkNRmSmgwnjr4Ah4VWvXtKpk8AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="Back.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>839, 3</value>
+    <value>956, 4</value>
+  </data>
+  <data name="Back.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Back.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>40, 37</value>
+    <value>47, 49</value>
   </data>
   <data name="Back.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
@@ -295,29 +315,32 @@
   </data>
   <data name="Options.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAOsAAADrASts18IAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAADAklEQVRYR8XXya4NURTG8YuQEMFYNyAhmpGHEDFnQkx4Bu1AE+2QiW5ItI9gqnkBvYiRvhlpEgTf
-        r5x9b91yqu65ci5f8k9q7b1q7V17r93UyF9oVjgeXoSfPTwfCzPDlOtQ0Oin8LSHZ2UHwpTrSfgaFlfW
-        by0Jyh5X1hC0PFwP98OlsDTQivAlvKus8VKmjg9553IQ41oQcyCtCx9CmV+8DjfCj579IDSlTB0fvt6p
-        xxBT7E7pZWn8RJgdTvZsPAx7w8LQ1KKgjk/xPxXmBLHYYneOhKHiKMvr2h42hemV1S0+fL0zTUFPpRNX
-        KqtFZRj1etiaG8S+V1ktknCcDF2998NQmcqLldUimVuSxxD204KwJ9wJr3rcDrvD/NBPO4KYYpcV1SoZ
-        zNk8NrUxvA/q8blHsd+GDaGpzUG92J1aGSwjmTxDQU0a/x7Unw6rQtHqcDao49PshFiPgnptjJO93fZq
-        h/sY9NRyqsuw+3IBtiho0dbAx0g0p2NfEFsb2joYqrPDklNhK7VOfX1znZtzPmcqq1vnAt9dlTUm+4TY
-        2tAWn6OhOskcJhzaJMm8YKgn0prA92Zl9ZezQ+48Z3B+5qFDb4JODirBrY4uaVPbA3XA8hF0ENk/HEov
-        K6tdox0oU2BY2jSZKVgb+HZNgb1gdAokghe+hZKEzXywyfCx1CbS+cB3Z2WNqZ6E2uJzOFRLwU3GZaJt
-        GVpSlpYlZqm1aVvgI2fmKaipvgy1tT/8cYXr2ohsLmUjstRke5Fh9+XqfN36UFfnRtRU11asE0ZCPSQb
-        iu3Lm43TwFvxIIeR6bDJ3AoyHRLOnDeHvWjgw8gdjqOjc5iyNB3xYncex//iQnK3slp0NXByfSrSe0Mo
-        J5qJ2U98zLl36ipXMqPcqualVK/L0EEmW079zg1l6vgUf1MpRv1Suix06r9ey4uMhNurC+SFUDJ3sj8m
-        Ek4Mwz7hlw+q8mtWPzs0ZgMa2q9Zl9xkDKnDpPycelZme51y2b8dYE6yMr+ej4RJ/p6PjPwCJSsZtPbA
-        7uYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMCSURBVFhHxdfJ
+        rg1RFMbxi5AQwVg3ICGakYcQMWdCTHgG7UAT7ZCJbki0j2CqeQG9iJG+GWkSBN+vnH1v3XKq7rlyLl/y
+        T2rtvWrtXXuv3dTIX2hWOB5ehJ89PB8LM8OU61DQ6KfwtIdnZQfClOtJ+BoWV9ZvLQnKHlfWELQ8XA/3
+        w6WwNNCK8CW8q6zxUqaOD3nnchDjWhBzIK0LH0KZX7wON8KPnv0gNKVMHR++3qnHEFPsTullafxEmB1O
+        9mw8DHvDwtDUoqCOT/E/FeYEsdhid46EoeIoy+vaHjaF6ZXVLT58vTNNQU+lE1cqq0VlGPV62JobxL5X
+        WS2ScJwMXb33w1CZyouV1SKZW5LHEPbTgrAn3AmvetwOu8P80E87gphilxXVKhnM2Tw2tTG8D+rxuUex
+        34YNoanNQb3YnVoZLCOZPENBTRr/HtSfDqtC0epwNqjj0+yEWI+Cem2Mk73d9mqH+xj01HKqy7D7cgG2
+        KGjR1sDHSDSnY18QWxvaOhiqs8OSU2ErtU59fXOdm3M+ZyqrW+cC312VNSb7hNja0Bafo6E6yRwmHNok
+        ybxgqCfSmsD3ZmX1l7ND7jxncH7moUNvgk4OKsGtji5pU9sDdcDyEXQQ2T8cSi8rq12jHShTYFjaNJkp
+        WBv4dk2BvWB0CiSCF76FkoTNfLDJ8LHUJtL5wHdnZY2pnoTa4nM4VEvBTcZlom0ZWlKWliVmqbVpW+Aj
+        Z+YpqKm+DLW1P/xxhevaiGwuZSOy1GR7kWH35ep83fpQV+dG1FTXVqwTRkI9JBuK7cubjdPAW/Egh5Hp
+        sMncCjIdEs6cN4e9aODDyB2Oo6NzmLI0HfFidx7H/+JCcreyWnQ1cHJ9KtJ7QygnmonZT3zMuXfqKlcy
+        o9yq5qVUr8vQQSZbTv3ODWXq+BR/UylG/VK6LHTqv17Li4yE26sL5IVQMneyPyYSTgzDPuGXD6rya1Y/
+        OzRmAxrar1mX3GQMqcOk/Jx6VmZ7nXLZvx1gTrIyv56PhEn+no+M/AIlKxm09sDu5gAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="Options.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>885, 3</value>
+    <value>1009, 4</value>
+  </data>
+  <data name="Options.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Options.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>43, 37</value>
+    <value>52, 49</value>
   </data>
   <data name="Options.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>8</value>
@@ -349,11 +372,14 @@
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 0</value>
   </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>931, 43</value>
+    <value>1064, 57</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>9</value>
@@ -371,73 +397,46 @@
     <value>4</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Menu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Options" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="Emergency" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="Back" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="Library" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="Location" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="Contact" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="Actions" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,5,Percent,17,Percent,17,Percent,17,Percent,17,Percent,17,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="tableLayoutPanel1.AutoScroll" type="System.Boolean, System.Private.CoreLib">
-    <value>True</value>
-  </data>
-  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
-  </data>
-  <data name="listView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="listView1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>3, 3</value>
-  </data>
-  <data name="listView1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>787, 452</value>
-  </data>
-  <data name="listView1.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listView1.Name" xml:space="preserve">
-    <value>listView1</value>
-  </data>
-  <data name="&gt;&gt;listView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;listView1.Parent" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;listView1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>3, 49</value>
-  </data>
-  <data name="tableLayoutPanel1.RowCount" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>793, 458</value>
-  </data>
-  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
-    <value>tableLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="listView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Menu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Options" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="Emergency" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="Back" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="Library" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnLocation" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="Contact" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="Actions" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,5,Percent,17,Percent,17,Percent,17,Percent,17,Percent,17,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel3.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
+  </data>
+  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 680</value>
+  </data>
+  <data name="tableLayoutPanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 60</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Copy" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="Keyboard" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="finalSentence" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Wand" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="Return" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="Speak" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="Copy.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -461,10 +460,13 @@
 </value>
   </data>
   <data name="Copy.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>885, 3</value>
+    <value>1013, 4</value>
+  </data>
+  <data name="Copy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Copy.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>43, 39</value>
+    <value>48, 52</value>
   </data>
   <data name="Copy.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -493,7 +495,7 @@
   <data name="Keyboard.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFdSURBVFhH3de9
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFdSURBVFhH3de9
         LgVBGMbxiYKgOIUQhTvQolG7BQVKEYlaRDQuwA1IVKdU+LgDdyAKkWgkaClUIr7+zxCZrJmdrN2ZSTzJ
         L9l9nWOe42R3lvnPGccCVrGOWWTJFE7wig/HNZKnhytowTv0sYdtzCB5NqHFDzGoQe6cQQWm7VmB3OMN
         A/asQJ7w8HWYP2PQn//CnhXIBlRg355lziQe8Y45DXJmAufQpz/QoGmGsIKtP9jBLbT4M3bhe52P1tTa
@@ -503,10 +505,13 @@
 </value>
   </data>
   <data name="Keyboard.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>839, 3</value>
+    <value>960, 4</value>
+  </data>
+  <data name="Keyboard.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Keyboard.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>40, 39</value>
+    <value>47, 52</value>
   </data>
   <data name="Keyboard.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -530,10 +535,13 @@
     <value>Segoe UI, 14pt</value>
   </data>
   <data name="finalSentence.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>3, 3</value>
+    <value>3, 4</value>
+  </data>
+  <data name="finalSentence.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="finalSentence.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>692, 39</value>
+    <value>792, 52</value>
   </data>
   <data name="finalSentence.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -577,10 +585,13 @@
 </value>
   </data>
   <data name="Wand.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>793, 3</value>
+    <value>907, 4</value>
+  </data>
+  <data name="Wand.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Wand.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>40, 39</value>
+    <value>47, 52</value>
   </data>
   <data name="Wand.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -609,7 +620,7 @@
   <data name="Return.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        swAAALMBudOKBAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVFhHxZfB
+        rgAAAK4B+ff3XQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVFhHxZfB
         bcMwFEO9RM7ZojO1a/XSU3LuvRt0iJ67gUs6n18GoRZOoF8ReAgj0+JHEgfQsq7rAp3BG/gCXKiEHew6
         R/dW/g08WA072b1Nw4UP8MSpKmFHdPENu/NjLy8X7IpOdm8G6/1wFepN44Fq1JvGA9WoN40HqlFvGg9U
         o940HvgL6ASu4Ll3/QjQYwNALP+M+y69zBHi/mY80APal/P11MsdIfZoxgMONKycxD7NeGAPNLScxF7N
@@ -619,10 +630,13 @@
 </value>
   </data>
   <data name="Return.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>701, 3</value>
+    <value>801, 4</value>
+  </data>
+  <data name="Return.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Return.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>40, 39</value>
+    <value>47, 52</value>
   </data>
   <data name="Return.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -666,10 +680,13 @@
 </value>
   </data>
   <data name="Speak.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>747, 3</value>
+    <value>854, 4</value>
+  </data>
+  <data name="Speak.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Speak.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>40, 39</value>
+    <value>47, 52</value>
   </data>
   <data name="Speak.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -686,44 +703,17 @@
   <data name="&gt;&gt;Speak.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 510</value>
-  </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, System.Private.CoreLib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>931, 45</value>
-  </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="Copy" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="Keyboard" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="finalSentence" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="Wand" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="Return" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="Speak" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
   <data name="Interpellate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="Interpellate.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>803, 49</value>
+    <value>918, 65</value>
+  </data>
+  <data name="Interpellate.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="Interpellate.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>125, 37</value>
+    <value>143, 49</value>
   </data>
   <data name="Interpellate.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>12</value>
@@ -741,16 +731,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Interpellate.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="ThemeView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
   </data>
   <data name="ThemeView.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>803, 93</value>
+    <value>918, 124</value>
+  </data>
+  <data name="ThemeView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="ThemeView.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>125, 414</value>
+    <value>142, 551</value>
   </data>
   <data name="ThemeView.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>13</value>
@@ -765,16 +758,82 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ThemeView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="userControlStandard1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 61</value>
+  </data>
+  <data name="userControlStandard1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 618</value>
+  </data>
+  <data name="userControlStandard1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;userControlStandard1.Name" xml:space="preserve">
+    <value>userControlStandard1</value>
+  </data>
+  <data name="&gt;&gt;userControlStandard1.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlStandard, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlStandard1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlStandard1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="userControlReact1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 61</value>
+  </data>
+  <data name="userControlReact1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 618</value>
+  </data>
+  <data name="userControlReact1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;userControlReact1.Name" xml:space="preserve">
+    <value>userControlReact1</value>
+  </data>
+  <data name="&gt;&gt;userControlReact1.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlReact, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlReact1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlReact1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="userControlUrgency1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 61</value>
+  </data>
+  <data name="userControlUrgency1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 618</value>
+  </data>
+  <data name="userControlUrgency1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;userControlUrgency1.Name" xml:space="preserve">
+    <value>userControlUrgency1</value>
+  </data>
+  <data name="&gt;&gt;userControlUrgency1.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlUrgency, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlUrgency1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlUrgency1.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
-    <value>7, 15</value>
+    <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>931, 555</value>
+    <value>1064, 740</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
