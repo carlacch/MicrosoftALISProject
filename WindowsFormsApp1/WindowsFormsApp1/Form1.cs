@@ -12,32 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private static int i = 0;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("This is the menu!!");
-        }
-
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
         {
 
         }
@@ -47,19 +29,47 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        private void btnActions_Click(object sender, EventArgs e)
         {
-
+            i = 0;
         }
 
-        private void userControlLibrary1_Load(object sender, EventArgs e)
+        private void btnEmergency_Click(object sender, EventArgs e)
         {
+            i = 0;
+            userControlUrgency.BringToFront();
+        }
 
+        private void btnLibrary_Click(object sender, EventArgs e)
+        {
+            i = 0;
+            userControlLibrary.BringToFront();
+        }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+            i = 0;
+        }
+
+        private void btnLocation_Click(object sender, EventArgs e)
+        {
+            i = 0;
+            userControlLocation.BringToFront();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            i += 1;
+            if (i%2 == 0)
+            {
+                userControlReact.BringToFront();
+            }
+            else { userControlStandard.BringToFront(); }
         }
     }
 }

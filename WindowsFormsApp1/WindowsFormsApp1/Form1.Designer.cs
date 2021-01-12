@@ -62,40 +62,42 @@
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnLibrary
             // 
             resources.ApplyResources(this.btnLibrary, "btnLibrary");
             this.btnLibrary.Name = "btnLibrary";
             this.btnLibrary.UseVisualStyleBackColor = true;
-            this.btnLibrary.Click += new System.EventHandler(this.button2_Click);
+            this.btnLibrary.Click += new System.EventHandler(this.btnLibrary_Click);
             // 
             // btnActions
             // 
             resources.ApplyResources(this.btnActions, "btnActions");
             this.btnActions.Name = "btnActions";
             this.btnActions.UseVisualStyleBackColor = true;
+            this.btnActions.Click += new System.EventHandler(this.btnActions_Click);
             // 
             // btnLocation
             // 
             resources.ApplyResources(this.btnLocation, "btnLocation");
             this.btnLocation.Name = "btnLocation";
             this.btnLocation.UseVisualStyleBackColor = true;
-            this.btnLocation.Click += new System.EventHandler(this.button4_Click);
+            this.btnLocation.Click += new System.EventHandler(this.btnLocation_Click);
             // 
             // btnContact
             // 
             resources.ApplyResources(this.btnContact, "btnContact");
             this.btnContact.Name = "btnContact";
             this.btnContact.UseVisualStyleBackColor = true;
-            this.btnContact.Click += new System.EventHandler(this.button6_Click);
+            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
             // 
             // btnEmergency
             // 
             resources.ApplyResources(this.btnEmergency, "btnEmergency");
             this.btnEmergency.Name = "btnEmergency";
             this.btnEmergency.UseVisualStyleBackColor = true;
-            this.btnEmergency.Click += new System.EventHandler(this.button5_Click);
+            this.btnEmergency.Click += new System.EventHandler(this.btnEmergency_Click);
             // 
             // btnBack
             // 
@@ -112,7 +114,6 @@
             this.btnOptions.FlatAppearance.BorderSize = 0;
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.UseVisualStyleBackColor = false;
-            this.btnOptions.Click += new System.EventHandler(this.button8_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -211,7 +212,6 @@
             // 
             resources.ApplyResources(this.userControlLibrary, "userControlLibrary");
             this.userControlLibrary.Name = "userControlLibrary";
-            this.userControlLibrary.Load += new System.EventHandler(this.userControlLibrary1_Load);
             // 
             // userControlLocation
             // 
@@ -231,6 +231,7 @@
             this.Controls.Add(this.userControlReact);
             this.Controls.Add(this.userControlLocation);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);

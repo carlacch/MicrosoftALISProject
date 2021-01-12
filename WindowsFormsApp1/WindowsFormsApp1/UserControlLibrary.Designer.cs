@@ -154,7 +154,7 @@ namespace WindowsFormsApp1
             this.ThemeView.Size = new System.Drawing.Size(152, 410);
             this.ThemeView.TabIndex = 14;
             this.ThemeView.UseCompatibleStateImageBehavior = false;
-            this.ThemeView.SelectedIndexChanged += new System.EventHandler(this.ThemeView_SelectedIndexChanged);
+
             // 
             // UserControlLibrary
             // 
