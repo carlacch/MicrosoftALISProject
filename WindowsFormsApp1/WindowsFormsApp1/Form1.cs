@@ -31,12 +31,13 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            userControlStandard.BringToFront();            
         }
 
         private void btnActions_Click(object sender, EventArgs e)
         {
             i = 0;
+            userControlAction.BringToFront();
         }
 
         private void btnEmergency_Click(object sender, EventArgs e)
