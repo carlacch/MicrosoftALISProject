@@ -51,6 +51,7 @@
             this.userControlUrgency = new WindowsFormsApp1.UserControlUrgency();
             this.userControlLibrary = new WindowsFormsApp1.UserControlLibrary();
             this.userControlLocation = new WindowsFormsApp1.UserControlLibrary();
+            this.userControlAction = new WindowsFormsApp1.UserControlAction();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -218,10 +219,16 @@
             resources.ApplyResources(this.userControlLocation, "userControlLocation");
             this.userControlLocation.Name = "userControlLocation";
             // 
+            // userControlAction
+            // 
+            resources.ApplyResources(this.userControlAction, "userControlAction");
+            this.userControlAction.Name = "userControlAction";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControlAction);
             this.Controls.Add(this.userControlLibrary);
             this.Controls.Add(this.userControlStandard);
             this.Controls.Add(this.ThemeView);
@@ -262,6 +269,7 @@
         private UserControlUrgency userControlUrgency;
         private UserControlLibrary userControlLibrary;
         private UserControlLibrary userControlLocation;
+        private UserControlAction userControlAction;
     }
 }
 

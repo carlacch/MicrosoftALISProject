@@ -394,7 +394,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnMenu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnOptions" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="btnEmergency" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnBack" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="btnLibrary" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnLocation" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="btnContact" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnActions" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,5,Percent,17,Percent,17,Percent,17,Percent,17,Percent,17,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -404,78 +404,6 @@
   </data>
   <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
-    <value>btnCopy</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnKeyboard.Name" xml:space="preserve">
-    <value>btnKeyboard</value>
-  </data>
-  <data name="&gt;&gt;btnKeyboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnKeyboard.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;btnKeyboard.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;finalSentence.Name" xml:space="preserve">
-    <value>finalSentence</value>
-  </data>
-  <data name="&gt;&gt;finalSentence.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;finalSentence.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;finalSentence.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnWand.Name" xml:space="preserve">
-    <value>btnWand</value>
-  </data>
-  <data name="&gt;&gt;btnWand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnWand.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;btnWand.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;btnReturn.Name" xml:space="preserve">
-    <value>btnReturn</value>
-  </data>
-  <data name="&gt;&gt;btnReturn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnReturn.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;btnReturn.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnSpeak.Name" xml:space="preserve">
-    <value>btnSpeak</value>
-  </data>
-  <data name="&gt;&gt;btnSpeak.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSpeak.Parent" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;btnSpeak.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -505,7 +433,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnCopy" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="btnKeyboard" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="finalSentence" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnWand" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnReturn" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnSpeak" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -692,7 +620,7 @@
   <data name="btnReturn.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qwAAAKsB1E2SqwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVFhHxZfB
+        qgAAAKoBBgpwTwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEpSURBVFhHxZfB
         bcMwFEO9RM7ZojO1a/XSU3LuvRt0iJ67gUs6n18GoRZOoF8ReAgj0+JHEgfQsq7rAp3BG/gCXKiEHew6
         R/dW/g08WA072b1Nw4UP8MSpKmFHdPENu/NjLy8X7IpOdm8G6/1wFepN44Fq1JvGA9WoN40HqlFvGg9U
         o940HvgL6ASu4Ll3/QjQYwNALP+M+y69zBHi/mY80APal/P11MsdIfZoxgMONKycxD7NeGAPNLScxF7N
@@ -800,7 +728,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ThemeView.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="userControlStandard.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
@@ -821,7 +749,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlStandard.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="userControlReact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
@@ -842,7 +770,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlReact.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="userControlUrgency.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
@@ -863,7 +791,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlUrgency.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="userControlLibrary.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
@@ -884,7 +812,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlLibrary.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="userControlLocation.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 61</value>
@@ -905,7 +833,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlLocation.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
+  </data>
+  <data name="userControlAction.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 61</value>
+  </data>
+  <data name="userControlAction.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 618</value>
+  </data>
+  <data name="userControlAction.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;userControlAction.Name" xml:space="preserve">
+    <value>userControlAction</value>
+  </data>
+  <data name="&gt;&gt;userControlAction.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlAction, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlAction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlAction.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
