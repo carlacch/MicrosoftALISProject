@@ -45,13 +45,13 @@
             this.btnWand = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnSpeak = new System.Windows.Forms.Button();
-            this.ThemeView = new System.Windows.Forms.ListView();
             this.userControlStandard = new WindowsFormsApp1.UserControlStandard();
             this.userControlReact = new WindowsFormsApp1.UserControlReact();
-            this.userControlUrgency = new WindowsFormsApp1.UserControlUrgency();
             this.userControlLibrary = new WindowsFormsApp1.UserControlLibrary();
             this.userControlLocation = new WindowsFormsApp1.UserControlLibrary();
             this.userControlAction = new WindowsFormsApp1.UserControlAction();
+            this.userControlUrgency = new WindowsFormsApp1.UserControlUrgency();
+            this.userControlContact = new WindowsFormsApp1.UserControlContact();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -187,13 +187,6 @@
             this.btnSpeak.Name = "btnSpeak";
             this.btnSpeak.UseVisualStyleBackColor = false;
             // 
-            // ThemeView
-            // 
-            resources.ApplyResources(this.ThemeView, "ThemeView");
-            this.ThemeView.HideSelection = false;
-            this.ThemeView.Name = "ThemeView";
-            this.ThemeView.UseCompatibleStateImageBehavior = false;
-            // 
             // userControlStandard
             // 
             resources.ApplyResources(this.userControlStandard, "userControlStandard");
@@ -203,11 +196,6 @@
             // 
             resources.ApplyResources(this.userControlReact, "userControlReact");
             this.userControlReact.Name = "userControlReact";
-            // 
-            // userControlUrgency
-            // 
-            resources.ApplyResources(this.userControlUrgency, "userControlUrgency");
-            this.userControlUrgency.Name = "userControlUrgency";
             // 
             // userControlLibrary
             // 
@@ -224,17 +212,27 @@
             resources.ApplyResources(this.userControlAction, "userControlAction");
             this.userControlAction.Name = "userControlAction";
             // 
+            // userControlUrgency
+            // 
+            resources.ApplyResources(this.userControlUrgency, "userControlUrgency");
+            this.userControlUrgency.Name = "userControlUrgency";
+            // 
+            // userControlContact
+            // 
+            resources.ApplyResources(this.userControlContact, "userControlContact");
+            this.userControlContact.Name = "userControlContact";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControlContact);
+            this.Controls.Add(this.userControlUrgency);
+            this.Controls.Add(this.tableLayoutPanel3);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.userControlAction);
             this.Controls.Add(this.userControlLibrary);
             this.Controls.Add(this.userControlStandard);
-            this.Controls.Add(this.ThemeView);
-            this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.userControlUrgency);
             this.Controls.Add(this.userControlReact);
             this.Controls.Add(this.userControlLocation);
             this.Name = "Form1";
@@ -263,13 +261,13 @@
         private System.Windows.Forms.Button btnWand;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnSpeak;
-        private System.Windows.Forms.ListView ThemeView;
         private UserControlStandard userControlStandard;
         private UserControlReact userControlReact;
-        private UserControlUrgency userControlUrgency;
         private UserControlLibrary userControlLibrary;
         private UserControlLibrary userControlLocation;
         private UserControlAction userControlAction;
+        private UserControlUrgency userControlUrgency;
+        private UserControlContact userControlContact;
     }
 }
 
