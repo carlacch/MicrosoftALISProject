@@ -14,5 +14,20 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSmiley_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOui_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

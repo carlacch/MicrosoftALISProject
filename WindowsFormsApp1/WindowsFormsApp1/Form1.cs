@@ -55,6 +55,7 @@ namespace WindowsFormsApp1
         private void btnContact_Click(object sender, EventArgs e)
         {
             i = 0;
+            userControlContact.BringToFront();
         }
 
         private void btnLocation_Click(object sender, EventArgs e)

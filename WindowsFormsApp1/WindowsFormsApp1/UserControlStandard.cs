@@ -14,5 +14,10 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnInterpellate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
