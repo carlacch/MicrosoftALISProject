@@ -60,13 +60,16 @@ namespace WindowsFormsApp1
             // wordCloudlistView
             // 
             this.wordCloudlistView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wordCloudlistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wordCloudlistView.HideSelection = false;
             this.wordCloudlistView.Location = new System.Drawing.Point(3, 4);
             this.wordCloudlistView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.wordCloudlistView.Name = "wordCloudlistView";
             this.wordCloudlistView.Size = new System.Drawing.Size(895, 607);
             this.wordCloudlistView.TabIndex = 0;
+            this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
             this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
+            this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
             // 
             // tableLayoutPanel2
             // 
@@ -86,6 +89,7 @@ namespace WindowsFormsApp1
             // 
             // ThemeView
             // 
+            this.ThemeView.CheckBoxes = true;
             this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ThemeView.HideSelection = false;
             this.ThemeView.Location = new System.Drawing.Point(3, 68);
@@ -93,6 +97,8 @@ namespace WindowsFormsApp1
             this.ThemeView.Size = new System.Drawing.Size(153, 542);
             this.ThemeView.TabIndex = 21;
             this.ThemeView.UseCompatibleStateImageBehavior = false;
+            this.ThemeView.View = System.Windows.Forms.View.List;
+            this.ThemeView.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ThemeView_ItemCheck);
             // 
             // btnInterpellate
             // 

@@ -29,10 +29,12 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Les phrases détectées seront affichées ici"}, -1, System.Drawing.SystemColors.WindowFrame, System.Drawing.Color.Empty, null);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ThemeView = new System.Windows.Forms.ListView();
-            this.SentenceslistView = new System.Windows.Forms.ListView();
             this.wordCloudlistView = new System.Windows.Forms.ListView();
+            this.SentenceslistView = new System.Windows.Forms.ListView();
+            this.ThemeView = new System.Windows.Forms.ListView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSmiley = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,9 +52,9 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Controls.Add(this.ThemeView, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.SentenceslistView, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.wordCloudlistView, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.SentenceslistView, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ThemeView, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -63,38 +65,49 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1064, 618);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // ThemeView
+            // wordCloudlistView
             // 
-            this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ThemeView.HideSelection = false;
-            this.ThemeView.Location = new System.Drawing.Point(3, 134);
-            this.ThemeView.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
-            this.ThemeView.Name = "ThemeView";
-            this.ThemeView.Size = new System.Drawing.Size(898, 480);
-            this.ThemeView.TabIndex = 15;
-            this.ThemeView.UseCompatibleStateImageBehavior = false;
+            this.wordCloudlistView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wordCloudlistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wordCloudlistView.HideSelection = false;
+            this.wordCloudlistView.Location = new System.Drawing.Point(3, 134);
+            this.wordCloudlistView.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
+            this.wordCloudlistView.Name = "wordCloudlistView";
+            this.wordCloudlistView.Size = new System.Drawing.Size(898, 480);
+            this.wordCloudlistView.TabIndex = 15;
+            this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
+            this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
+            this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
             // 
             // SentenceslistView
             // 
             this.SentenceslistView.Activation = System.Windows.Forms.ItemActivation.TwoClick;
             this.SentenceslistView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SentenceslistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SentenceslistView.HideSelection = false;
+            this.SentenceslistView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
             this.SentenceslistView.Location = new System.Drawing.Point(3, 3);
             this.SentenceslistView.Name = "SentenceslistView";
             this.SentenceslistView.Size = new System.Drawing.Size(898, 125);
             this.SentenceslistView.TabIndex = 0;
+            this.SentenceslistView.TileSize = new System.Drawing.Size(870, 44);
             this.SentenceslistView.UseCompatibleStateImageBehavior = false;
+            this.SentenceslistView.View = System.Windows.Forms.View.Tile;
             // 
-            // wordCloudlistView
+            // ThemeView
             // 
-            this.wordCloudlistView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wordCloudlistView.HideSelection = false;
-            this.wordCloudlistView.Location = new System.Drawing.Point(907, 134);
-            this.wordCloudlistView.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
-            this.wordCloudlistView.Name = "wordCloudlistView";
-            this.wordCloudlistView.Size = new System.Drawing.Size(154, 480);
-            this.wordCloudlistView.TabIndex = 1;
-            this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
+            this.ThemeView.CheckBoxes = true;
+            this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThemeView.HideSelection = false;
+            this.ThemeView.Location = new System.Drawing.Point(907, 134);
+            this.ThemeView.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
+            this.ThemeView.Name = "ThemeView";
+            this.ThemeView.Size = new System.Drawing.Size(154, 480);
+            this.ThemeView.TabIndex = 1;
+            this.ThemeView.UseCompatibleStateImageBehavior = false;
+            this.ThemeView.View = System.Windows.Forms.View.List;
+            this.ThemeView.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.wordCloudlistView_ItemCheck);
             // 
             // tableLayoutPanel2
             // 
@@ -194,8 +207,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView SentenceslistView;
-        private System.Windows.Forms.ListView wordCloudlistView;
         private System.Windows.Forms.ListView ThemeView;
+        private System.Windows.Forms.ListView wordCloudlistView;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button btnSmiley;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
