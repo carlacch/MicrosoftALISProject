@@ -47,7 +47,8 @@ namespace WindowsFormsApp1
 
         private void btnOui_Click(object sender, EventArgs e)
         {
-
+            Form1 parentForm = (this.Parent as Form1);
+            parentForm.finalSentence.Text = "Oui";
         }
 
         private void wordCloudlistView_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -74,6 +75,12 @@ namespace WindowsFormsApp1
                     }
                 }
             }
+        }
+
+        private void btnNon_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = (this.Parent as Form1);
+            parentForm.finalSentence.Text = "Non";
         }
     }
 }
