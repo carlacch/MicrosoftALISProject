@@ -77,6 +77,7 @@ namespace WindowsFormsApp1
             // 
             // ThemeView
             // 
+            this.ThemeView.CheckBoxes = true;
             this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ThemeView.HideSelection = false;
             this.ThemeView.Location = new System.Drawing.Point(3, 3);
@@ -84,6 +85,8 @@ namespace WindowsFormsApp1
             this.ThemeView.Size = new System.Drawing.Size(154, 406);
             this.ThemeView.TabIndex = 20;
             this.ThemeView.UseCompatibleStateImageBehavior = false;
+            this.ThemeView.View = System.Windows.Forms.View.List;
+            this.ThemeView.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ThemeView_ItemCheck);
             // 
             // tableLayoutPanel3
             // 
@@ -112,9 +115,9 @@ namespace WindowsFormsApp1
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnAdd.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAdd.Location = new System.Drawing.Point(3, 137);
+            this.btnAdd.Location = new System.Drawing.Point(3, 139);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(154, 64);
+            this.btnAdd.Size = new System.Drawing.Size(154, 62);
             this.btnAdd.TabIndex = 15;
             this.btnAdd.Text = "Ajouter Contenu";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -126,9 +129,9 @@ namespace WindowsFormsApp1
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnEdit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEdit.Location = new System.Drawing.Point(3, 70);
+            this.btnEdit.Location = new System.Drawing.Point(3, 71);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(154, 61);
+            this.btnEdit.Size = new System.Drawing.Size(154, 62);
             this.btnEdit.TabIndex = 14;
             this.btnEdit.Text = "Editer un Thème";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -142,7 +145,7 @@ namespace WindowsFormsApp1
             this.btnCreate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnCreate.Location = new System.Drawing.Point(3, 3);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(154, 61);
+            this.btnCreate.Size = new System.Drawing.Size(154, 62);
             this.btnCreate.TabIndex = 13;
             this.btnCreate.Text = "Créer un Thème";
             this.btnCreate.UseVisualStyleBackColor = false;
@@ -150,13 +153,16 @@ namespace WindowsFormsApp1
             // wordCloudlistView
             // 
             this.wordCloudlistView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wordCloudlistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wordCloudlistView.HideSelection = false;
             this.wordCloudlistView.Location = new System.Drawing.Point(3, 4);
             this.wordCloudlistView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.wordCloudlistView.Name = "wordCloudlistView";
             this.wordCloudlistView.Size = new System.Drawing.Size(898, 610);
             this.wordCloudlistView.TabIndex = 0;
+            this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
             this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
+            this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
             // 
             // UserControlLibrary
             // 

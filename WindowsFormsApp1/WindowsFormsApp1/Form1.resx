@@ -394,7 +394,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnMenu" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnOptions" Row="0" RowSpan="1" Column="7" ColumnSpan="1" /&gt;&lt;Control Name="btnEmergency" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnBack" Row="0" RowSpan="1" Column="6" ColumnSpan="1" /&gt;&lt;Control Name="btnLibrary" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnLocation" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="btnContact" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="btnActions" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,5,Percent,17,Percent,17,Percent,17,Percent,17,Percent,17,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -505,7 +505,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnCopy" Row="0" RowSpan="1" Column="5" ColumnSpan="1" /&gt;&lt;Control Name="btnKeyboard" Row="0" RowSpan="1" Column="4" ColumnSpan="1" /&gt;&lt;Control Name="finalSentence" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="btnWand" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="btnReturn" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="btnSpeak" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,75,Percent,5,Percent,5,Percent,5,Percent,5,Percent,5" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -803,31 +803,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlStandard.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="userControlReact.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="userControlReact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 0</value>
-  </data>
-  <data name="userControlReact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1064, 740</value>
-  </data>
-  <data name="userControlReact.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;userControlReact.Name" xml:space="preserve">
-    <value>userControlReact</value>
-  </data>
-  <data name="&gt;&gt;userControlReact.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.UserControlReact, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;userControlReact.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;userControlReact.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="userControlLibrary.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -851,7 +827,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlLibrary.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="userControlLocation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -875,7 +851,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlLocation.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>3</value>
   </data>
   <data name="userControlAction.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -905,7 +881,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlAction.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="userControlUrgency.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -914,10 +890,10 @@
     <value>Fill</value>
   </data>
   <data name="userControlUrgency.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 57</value>
+    <value>0, 0</value>
   </data>
   <data name="userControlUrgency.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1064, 623</value>
+    <value>1064, 740</value>
   </data>
   <data name="userControlUrgency.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>20</value>
@@ -932,16 +908,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlUrgency.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="userControlContact.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="userControlContact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 57</value>
+    <value>0, 0</value>
   </data>
   <data name="userControlContact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1064, 623</value>
+    <value>1064, 740</value>
   </data>
   <data name="userControlContact.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>21</value>
@@ -956,6 +932,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;userControlContact.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="userControlReact.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="userControlReact.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="userControlReact.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 57</value>
+  </data>
+  <data name="userControlReact.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1064, 623</value>
+  </data>
+  <data name="userControlReact.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;userControlReact.Name" xml:space="preserve">
+    <value>userControlReact</value>
+  </data>
+  <data name="&gt;&gt;userControlReact.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.UserControlReact, WindowsFormsApp1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;userControlReact.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;userControlReact.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">

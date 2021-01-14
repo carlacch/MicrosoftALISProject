@@ -59,17 +59,24 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 615F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1064, 618);
             this.tableLayoutPanel1.TabIndex = 5;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // wordCloudlistView
             // 
             this.wordCloudlistView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wordCloudlistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.wordCloudlistView.GridLines = true;
             this.wordCloudlistView.HideSelection = false;
+            this.wordCloudlistView.HoverSelection = true;
             this.wordCloudlistView.Location = new System.Drawing.Point(3, 4);
             this.wordCloudlistView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.wordCloudlistView.Name = "wordCloudlistView";
             this.wordCloudlistView.Size = new System.Drawing.Size(898, 610);
             this.wordCloudlistView.TabIndex = 0;
+            this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
             this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
+            this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
+            this.wordCloudlistView.SelectedIndexChanged += new System.EventHandler(this.wordCloudlistView_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -88,16 +95,22 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 616);
             this.tableLayoutPanel2.TabIndex = 1;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // ThemeView
             // 
+            this.ThemeView.CheckBoxes = true;
             this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThemeView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ThemeView.HideSelection = false;
             this.ThemeView.Location = new System.Drawing.Point(3, 3);
             this.ThemeView.Name = "ThemeView";
             this.ThemeView.Size = new System.Drawing.Size(154, 361);
             this.ThemeView.TabIndex = 20;
             this.ThemeView.UseCompatibleStateImageBehavior = false;
+            this.ThemeView.View = System.Windows.Forms.View.List;
+            this.ThemeView.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.themeView_ItemCheck);
+            this.ThemeView.SelectedIndexChanged += new System.EventHandler(this.ThemeView_SelectedIndexChanged);
             // 
             // tableLayoutPanel3
             // 
@@ -172,6 +185,7 @@ namespace WindowsFormsApp1
             this.btnAgenda.TabIndex = 21;
             this.btnAgenda.Text = "Agenda";
             this.btnAgenda.UseVisualStyleBackColor = false;
+            this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
             // UserControlAction
             // 
@@ -191,13 +205,13 @@ namespace WindowsFormsApp1
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ListView wordCloudlistView;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.ListView ThemeView;
         private System.Windows.Forms.Button btnAgenda;
+        protected System.Windows.Forms.ListView wordCloudlistView;
+        protected System.Windows.Forms.ListView ThemeView;
     }
 }

@@ -46,12 +46,12 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnSpeak = new System.Windows.Forms.Button();
             this.userControlStandard = new WindowsFormsApp1.UserControlStandard();
-            this.userControlReact = new WindowsFormsApp1.UserControlReact();
             this.userControlLibrary = new WindowsFormsApp1.UserControlLibrary();
             this.userControlLocation = new WindowsFormsApp1.UserControlLibrary();
             this.userControlAction = new WindowsFormsApp1.UserControlAction();
             this.userControlUrgency = new WindowsFormsApp1.UserControlUrgency();
             this.userControlContact = new WindowsFormsApp1.UserControlContact();
+            this.userControlReact = new WindowsFormsApp1.UserControlReact();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -191,50 +191,56 @@
             // 
             resources.ApplyResources(this.userControlStandard, "userControlStandard");
             this.userControlStandard.Name = "userControlStandard";
-            // 
-            // userControlReact
-            // 
-            resources.ApplyResources(this.userControlReact, "userControlReact");
-            this.userControlReact.Name = "userControlReact";
+            this.userControlStandard.Load += new System.EventHandler(this.userControlStandard_Load);
             // 
             // userControlLibrary
             // 
             resources.ApplyResources(this.userControlLibrary, "userControlLibrary");
             this.userControlLibrary.Name = "userControlLibrary";
+            this.userControlLibrary.Load += new System.EventHandler(this.userControlLibrary_Load);
             // 
             // userControlLocation
             // 
             resources.ApplyResources(this.userControlLocation, "userControlLocation");
             this.userControlLocation.Name = "userControlLocation";
+            this.userControlLocation.Load += new System.EventHandler(this.userControlLocation_Load);
             // 
             // userControlAction
             // 
             resources.ApplyResources(this.userControlAction, "userControlAction");
             this.userControlAction.Name = "userControlAction";
+            this.userControlAction.Load += new System.EventHandler(this.userControlAction_Load);
             // 
             // userControlUrgency
             // 
             resources.ApplyResources(this.userControlUrgency, "userControlUrgency");
             this.userControlUrgency.Name = "userControlUrgency";
+            this.userControlUrgency.Load += new System.EventHandler(this.userControlUrgency_Load);
             // 
             // userControlContact
             // 
             resources.ApplyResources(this.userControlContact, "userControlContact");
             this.userControlContact.Name = "userControlContact";
             // 
+            // userControlReact
+            // 
+            resources.ApplyResources(this.userControlReact, "userControlReact");
+            this.userControlReact.Name = "userControlReact";
+            this.userControlReact.Load += new System.EventHandler(this.userControlReact_Load);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.userControlContact);
-            this.Controls.Add(this.userControlUrgency);
+            this.Controls.Add(this.userControlReact);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.userControlLocation);
+            this.Controls.Add(this.userControlContact);
+            this.Controls.Add(this.userControlUrgency);
             this.Controls.Add(this.userControlAction);
             this.Controls.Add(this.userControlLibrary);
             this.Controls.Add(this.userControlStandard);
-            this.Controls.Add(this.userControlReact);
-            this.Controls.Add(this.userControlLocation);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -262,12 +268,12 @@
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnSpeak;
         private UserControlStandard userControlStandard;
-        private UserControlReact userControlReact;
         private UserControlLibrary userControlLibrary;
         private UserControlLibrary userControlLocation;
         private UserControlAction userControlAction;
         private UserControlUrgency userControlUrgency;
         private UserControlContact userControlContact;
+        private UserControlReact userControlReact;
     }
 }
 

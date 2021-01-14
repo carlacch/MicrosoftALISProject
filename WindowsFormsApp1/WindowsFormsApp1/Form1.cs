@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            userControlStandard.BringToFront();            
+            userControlStandard.BringToFront();
         }
 
         private void btnActions_Click(object sender, EventArgs e)
@@ -67,11 +67,66 @@ namespace WindowsFormsApp1
         private void btnMenu_Click(object sender, EventArgs e)
         {
             i += 1;
-            if (i%2 == 0)
+            if (i % 2 == 0)
             {
                 userControlReact.BringToFront();
             }
             else { userControlStandard.BringToFront(); }
+        }
+
+        List<Theme> GetThemes()
+        {
+            Theme thVerbe = new Theme("Verbe", new List<string> { "manger", "boire", "faire", "laver", "aller" });
+            Theme thLocation = new Theme("Lieux", new List<string> { "maison", "dehors", "supermarché", "épicerie", "centre commercial", "parc" });
+            Theme thAdverbeTemps = new Theme("Adverbe de Temps", new List<string> { "depuis", "hier", "longtemps", "demain", "maintenant", "parfois", "toujours" });
+            Theme thAdverbe = new Theme("Adverbe de Manière", new List<string> { "lentement", "bien", "mieux", "pire", "plutôt", "mal", "comme" });
+            List<Theme> listThemes = new List<Theme> { thVerbe, thLocation, thAdverbeTemps, thAdverbe };
+            return listThemes;
+        }
+
+        List<Theme> GetThemesUrgency()
+        {
+            Theme thAssistance = new Theme("Assistance", new List<string> { "j'ai besoin d'aide", "aidez-moi", "à l'aide", "aide", "problème" });
+            Theme thLocation = new Theme("Lieux", new List<string> { "maison", "dehors", "main", "oeil", "ventre", "dos", "pied", "coeur", "poumon" });
+            Theme thMaux = new Theme("Maux", new List<string> { "mal", "douleur", "souffrance", "piqure", "gratte", "brûle" });
+            List<Theme> listThemes = new List<Theme> { thAssistance, thLocation, thMaux };
+            return listThemes;
+        }
+
+        private void userControlAction_Load(object sender, EventArgs e)
+        {
+            var listThemes = GetThemes();
+            userControlAction.AddListToView(listThemes);      
+        }
+
+        private void userControlReact_Load(object sender, EventArgs e)
+        {
+            var listThemes = GetThemes();
+            userControlReact.AddListToView(listThemes);
+        }
+
+        private void userControlLibrary_Load(object sender, EventArgs e)
+        {
+            var listThemes = GetThemes();
+            userControlLibrary.AddListToView(listThemes);
+        }
+
+        private void userControlLocation_Load(object sender, EventArgs e)
+        {
+            var listThemes = GetThemes();
+            userControlLocation.AddListToView(listThemes);
+        }
+
+        private void userControlStandard_Load(object sender, EventArgs e)
+        {
+            var listThemes = GetThemes();
+            userControlStandard.AddListToView(listThemes);
+        }
+
+        private void userControlUrgency_Load(object sender, EventArgs e)
+        {
+            var listThemes = GetThemesUrgency();
+            userControlUrgency.AddListToView(listThemes);
         }
     }
 }
