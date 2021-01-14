@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "Les phrases détectées seront affichées ici"}, -1, System.Drawing.SystemColors.WindowFrame, System.Drawing.Color.Empty, null);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.wordCloudlistView = new System.Windows.Forms.ListView();
@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
             this.btnSmiley = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnOui = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNon = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
             this.SentenceslistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SentenceslistView.HideSelection = false;
             this.SentenceslistView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.SentenceslistView.Location = new System.Drawing.Point(3, 3);
             this.SentenceslistView.Name = "SentenceslistView";
             this.SentenceslistView.Size = new System.Drawing.Size(898, 125);
@@ -143,7 +143,7 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.btnOui, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.button2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.btnNon, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -167,17 +167,18 @@ namespace WindowsFormsApp1
             this.btnOui.UseVisualStyleBackColor = false;
             this.btnOui.Click += new System.EventHandler(this.btnOui_Click);
             // 
-            // button2
+            // btnNon
             // 
-            this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(3, 67);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 59);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "NON";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnNon.BackColor = System.Drawing.Color.LightCoral;
+            this.btnNon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnNon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNon.Location = new System.Drawing.Point(3, 67);
+            this.btnNon.Name = "btnNon";
+            this.btnNon.Size = new System.Drawing.Size(75, 59);
+            this.btnNon.TabIndex = 1;
+            this.btnNon.Text = "NON";
+            this.btnNon.UseVisualStyleBackColor = false;
+            this.btnNon.Click += new System.EventHandler(this.btnNon_Click);
             // 
             // listView1
             // 
@@ -213,6 +214,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button btnSmiley;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button btnOui;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNon;
     }
 }
