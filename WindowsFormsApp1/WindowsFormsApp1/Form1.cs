@@ -12,8 +12,6 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private static int i = 0;
-
         public Form1()
         {
             InitializeComponent();
@@ -36,42 +34,32 @@ namespace WindowsFormsApp1
 
         private void btnActions_Click(object sender, EventArgs e)
         {
-            i = 0;
             userControlAction.BringToFront();
         }
 
         private void btnEmergency_Click(object sender, EventArgs e)
         {
-            i = 0;
             userControlUrgency.BringToFront();
         }
 
         private void btnLibrary_Click(object sender, EventArgs e)
         {
-            i = 0;
             userControlLibrary.BringToFront();
         }
 
         private void btnContact_Click(object sender, EventArgs e)
         {
-            i = 0;
             userControlContact.BringToFront();
         }
 
         private void btnLocation_Click(object sender, EventArgs e)
         {
-            i = 0;
             userControlLocation.BringToFront();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            i += 1;
-            if (i % 2 == 0)
-            {
-                userControlReact.BringToFront();
-            }
-            else { userControlStandard.BringToFront(); }
+            userControlStandard.BringToFront();
         }
 
         List<Theme> GetThemes()
