@@ -260,6 +260,7 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnOptions;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button btnCopy;
         private System.Windows.Forms.Button btnKeyboard;
         private System.Windows.Forms.Button btnWand;
@@ -271,9 +272,8 @@
         private UserControlAction userControlAction;
         private UserControlUrgency userControlUrgency;
         private UserControlContact userControlContact;
-        private UserControlReact userControlReact;
-        protected System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        public System.Windows.Forms.RichTextBox finalSentence;
+        internal UserControlReact userControlReact;        
+        internal System.Windows.Forms.RichTextBox finalSentence;
     }
 }
 
