@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace WindowsFormsApp1
 {
@@ -19,6 +20,15 @@ namespace WindowsFormsApp1
             finalSentence.ForeColor = Color.Gray;
             finalSentence.GotFocus += new EventHandler(finalSentence_GotFocus);
             finalSentence.LostFocus += new EventHandler(finalSentence_LostFocus);
+        }
+        
+        public void ExecuteAsAdmin(string fileName)
+        {
+            Process proc = new Process();
+            proc.StartInfo.FileName = fileName;
+            proc.StartInfo.UseShellExecute = true;
+            proc.StartInfo.Verb = "runas";
+            proc.Start();
         }
 
         void finalSentence_LostFocus(object sender, EventArgs e)
@@ -147,9 +157,12 @@ namespace WindowsFormsApp1
             finalSentence.Text = sentence;
         }
 
+        
+
         private void btnKeyboard_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(@"osk.exe"); //elevation issue
+            ExecuteAsAdmin(@"osk.exe");
+            finalSentence.Focus();
         }
     }
 }
