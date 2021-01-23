@@ -128,7 +128,6 @@
             this.tableLayoutPanel2.Controls.Add(this.btnContact, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnActions, 3, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -157,6 +156,7 @@
             this.btnKeyboard.FlatAppearance.BorderSize = 0;
             this.btnKeyboard.Name = "btnKeyboard";
             this.btnKeyboard.UseVisualStyleBackColor = false;
+            this.btnKeyboard.Click += new System.EventHandler(this.btnKeyboard_Click);
             // 
             // finalSentence
             // 
@@ -178,6 +178,7 @@
             this.btnReturn.FlatAppearance.BorderSize = 0;
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnSpeak
             // 

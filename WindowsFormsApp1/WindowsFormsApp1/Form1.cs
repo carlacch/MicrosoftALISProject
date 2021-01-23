@@ -15,16 +15,28 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            finalSentence.Text = "Phrase en cours de composition";
+            finalSentence.ForeColor = Color.Gray;
+            finalSentence.GotFocus += new EventHandler(finalSentence_GotFocus);
+            finalSentence.LostFocus += new EventHandler(finalSentence_LostFocus);
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        void finalSentence_LostFocus(object sender, EventArgs e)
         {
-
+            if (finalSentence.Text.Equals(string.Empty))
+            {
+                finalSentence.Text = "Phrase en cours de composition";
+                finalSentence.ForeColor = Color.Gray;
+            }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        internal void finalSentence_GotFocus(object sender, EventArgs e)
         {
-
+            if (finalSentence.Text.Equals("Phrase en cours de composition"))
+            {
+                finalSentence.Text = string.Empty;
+                finalSentence.ForeColor = Color.Black;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -115,6 +127,29 @@ namespace WindowsFormsApp1
         {
             var listThemes = GetThemesUrgency();
             userControlUrgency.AddListToView(listThemes);
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            string sentence = finalSentence.Text;
+            if (sentence == "Phrase en cours de composition" || String.IsNullOrEmpty(sentence))
+            {
+                finalSentence.Text = string.Empty;
+                finalSentence_LostFocus(sender, e);
+                return;
+            }
+            int index = sentence.LastIndexOf(" ");
+            if (index == -1 && sentence.Length > 0)
+            {
+                index = sentence.Length - 1;
+            }
+            sentence = sentence.Remove(index);
+            finalSentence.Text = sentence;
+        }
+
+        private void btnKeyboard_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"osk.exe"); //elevation issue
         }
     }
 }

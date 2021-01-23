@@ -35,11 +35,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnSmiley_Click(object sender, EventArgs e)
         {
 
@@ -48,7 +43,15 @@ namespace WindowsFormsApp1
         private void btnOui_Click(object sender, EventArgs e)
         {
             Form1 parentForm = (this.Parent as Form1);
-            parentForm.finalSentence.Text = "Oui";
+            parentForm.finalSentence.Text = "Oui ";
+            parentForm.finalSentence.ForeColor = Color.Black;
+        }
+        
+        private void btnNon_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = (this.Parent as Form1);
+            parentForm.finalSentence.Text = "Non ";
+            parentForm.finalSentence.ForeColor = Color.Black;
         }
 
         private void wordCloudlistView_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -77,10 +80,16 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void btnNon_Click(object sender, EventArgs e)
+        private void wordCloudlistView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Form1 parentForm = (this.Parent as Form1);
-            parentForm.finalSentence.Text = "Non";
+            var selectedItem = wordCloudlistView.SelectedItems;
+            if (selectedItem.Count > 0) 
+            {
+                Form1 parentForm = (this.Parent as Form1);
+                parentForm.finalSentence_GotFocus(sender, e);
+                parentForm.finalSentence.Text += selectedItem[0].Text + " ";
+            }
         }
     }
+
 }
