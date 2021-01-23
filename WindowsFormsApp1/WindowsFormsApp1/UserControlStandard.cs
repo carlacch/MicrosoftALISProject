@@ -66,6 +66,17 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void wordCloudlistView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedItem = wordCloudlistView.SelectedItems;
+            if (selectedItem.Count > 0)
+            {
+                Form1 parentForm = (this.Parent as Form1);
+                parentForm.finalSentence_GotFocus(sender, e);
+                parentForm.finalSentence.Text += selectedItem[0].Text + " ";
+            }
+        }
+
         private void btnListen_Click(object sender, EventArgs e)
         {
             Form1 parentForm = this.Parent as Form1;

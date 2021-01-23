@@ -32,9 +32,9 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.wordCloudlistView = new System.Windows.Forms.ListView();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.ThemeView = new System.Windows.Forms.ListView();
             this.btnInterpellate = new System.Windows.Forms.Button();
             this.btnListen = new System.Windows.Forms.Button();
-            this.ThemeView = new System.Windows.Forms.ListView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,7 @@ namespace WindowsFormsApp1
             this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
             this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
             this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
+            this.wordCloudlistView.SelectedIndexChanged += new System.EventHandler(this.wordCloudlistView_SelectedIndexChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -89,6 +90,18 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.30453F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(159, 613);
             this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // ThemeView
+            // 
+            this.ThemeView.CheckBoxes = true;
+            this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ThemeView.HideSelection = false;
+            this.ThemeView.Location = new System.Drawing.Point(3, 135);
+            this.ThemeView.Name = "ThemeView";
+            this.ThemeView.Size = new System.Drawing.Size(153, 475);
+            this.ThemeView.TabIndex = 22;
+            this.ThemeView.UseCompatibleStateImageBehavior = false;
+            this.ThemeView.View = System.Windows.Forms.View.List;
             // 
             // btnInterpellate
             // 
@@ -116,18 +129,6 @@ namespace WindowsFormsApp1
             this.btnListen.Text = "Ecouter";
             this.btnListen.UseVisualStyleBackColor = false;
             this.btnListen.Click += new System.EventHandler(this.btnListen_Click);
-            // 
-            // ThemeView
-            // 
-            this.ThemeView.CheckBoxes = true;
-            this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ThemeView.HideSelection = false;
-            this.ThemeView.Location = new System.Drawing.Point(3, 135);
-            this.ThemeView.Name = "ThemeView";
-            this.ThemeView.Size = new System.Drawing.Size(153, 475);
-            this.ThemeView.TabIndex = 22;
-            this.ThemeView.UseCompatibleStateImageBehavior = false;
-            this.ThemeView.View = System.Windows.Forms.View.List;
             // 
             // UserControlStandard
             // 
