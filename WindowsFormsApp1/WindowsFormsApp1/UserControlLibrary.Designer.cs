@@ -163,6 +163,7 @@ namespace WindowsFormsApp1
             this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
             this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
             this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
+            this.wordCloudlistView.SelectedIndexChanged += new System.EventHandler(this.wordCloudlistView_SelectedIndexChanged);
             // 
             // UserControlLibrary
             // 

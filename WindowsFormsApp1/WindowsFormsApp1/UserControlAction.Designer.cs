@@ -59,7 +59,6 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 615F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1064, 618);
             this.tableLayoutPanel1.TabIndex = 5;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // wordCloudlistView
             // 
@@ -67,7 +66,6 @@ namespace WindowsFormsApp1
             this.wordCloudlistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wordCloudlistView.GridLines = true;
             this.wordCloudlistView.HideSelection = false;
-            this.wordCloudlistView.HoverSelection = true;
             this.wordCloudlistView.Location = new System.Drawing.Point(3, 4);
             this.wordCloudlistView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.wordCloudlistView.Name = "wordCloudlistView";
@@ -95,7 +93,6 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 616);
             this.tableLayoutPanel2.TabIndex = 1;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // ThemeView
             // 
@@ -110,7 +107,6 @@ namespace WindowsFormsApp1
             this.ThemeView.UseCompatibleStateImageBehavior = false;
             this.ThemeView.View = System.Windows.Forms.View.List;
             this.ThemeView.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.themeView_ItemCheck);
-            this.ThemeView.SelectedIndexChanged += new System.EventHandler(this.ThemeView_SelectedIndexChanged);
             // 
             // tableLayoutPanel3
             // 

@@ -35,19 +35,15 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void ThemeView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void wordCloudlistView_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var selectedItem = wordCloudlistView.SelectedItems;
+            if (selectedItem.Count > 0)
+            {
+                Form1 parentForm = (this.Parent as Form1);
+                parentForm.finalSentence_GotFocus(sender, e);
+                parentForm.finalSentence.Text += selectedItem[0].Text + " ";
+            }
         }
 
         private void themeView_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -76,48 +72,10 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnAgenda_Click(object sender, EventArgs e)
         {
 
         }
-
-        /*
-        #region Properties
-
-        private ListView _themeview;
-        private Button _createTheme;
-        private ListView _wordview;
-
-        [Category("ControlAction")]
-        public ListView ThemeView
-        {
-            get { return _themeview; }
-            set { _themeview = value; }
-        }
-
-
-        [Category("ControlAction")]
-        public Button CreateTheme
-        {
-            get { return _createTheme; }
-            set { _createTheme = value; }
-        }
-
-
-        [Category("ControlAction")]
-        public ListView WordView
-        {
-            get { return _wordview; }
-            set { _wordview = value; }
-        }
-
-        #endregion
-        */
 
     }
 }
