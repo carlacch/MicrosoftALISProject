@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
             "Les phrases détectées seront affichées ici"}, -1, System.Drawing.SystemColors.WindowFrame, System.Drawing.Color.Empty, null);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.wordCloudlistView = new System.Windows.Forms.ListView();
@@ -78,6 +78,7 @@ namespace WindowsFormsApp1
             this.wordCloudlistView.TileSize = new System.Drawing.Size(200, 60);
             this.wordCloudlistView.UseCompatibleStateImageBehavior = false;
             this.wordCloudlistView.View = System.Windows.Forms.View.Tile;
+            this.wordCloudlistView.SelectedIndexChanged += new System.EventHandler(this.wordCloudlistView_SelectedIndexChanged);
             // 
             // SentenceslistView
             // 
@@ -86,7 +87,7 @@ namespace WindowsFormsApp1
             this.SentenceslistView.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SentenceslistView.HideSelection = false;
             this.SentenceslistView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
+            listViewItem1});
             this.SentenceslistView.Location = new System.Drawing.Point(3, 3);
             this.SentenceslistView.Name = "SentenceslistView";
             this.SentenceslistView.Size = new System.Drawing.Size(898, 125);
@@ -124,7 +125,6 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 129);
             this.tableLayoutPanel2.TabIndex = 16;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // btnSmiley
             // 
