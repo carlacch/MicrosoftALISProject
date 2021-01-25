@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Drawing;
+using System.Collections;
 
 namespace WindowsFormsApp1
 {
@@ -8,6 +10,10 @@ namespace WindowsFormsApp1
     {
         private string title;
         private List<string> words;
+
+
+        // colors possible
+        public List<Color> colorList = new List<Color>{  Color.LightBlue, Color.LightGreen, Color.LightSalmon, Color.RosyBrown, Color.YellowGreen, Color.OrangeRed, Color.Yellow,   Color.Cyan};
 
         public Theme(string title) {
             this.title = title;

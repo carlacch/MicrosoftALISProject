@@ -19,15 +19,25 @@ namespace WindowsFormsApp1
         {
             var items = ThemeView.Items;
             var words = wordCloudlistView.Items;
+
+            int themeIndex = 0;
+
             foreach (var value in listTheme)
             {
+                //color assignement
+                Color themeColor = value.colorList[themeIndex];
+                themeIndex++;
+
                 ListViewItem item = new ListViewItem(value.Title);
+                item.BackColor = themeColor;
                 item.Checked = true;
                 items.Add(item);
                 List<ListViewItem> allWords = new List<ListViewItem>();
                 foreach (var w in value.Words)
                 {
                     ListViewItem itemword = new ListViewItem(w);
+
+                    itemword.BackColor = themeColor;
                     words.Add(itemword);
                     allWords.Add(itemword);
                 }

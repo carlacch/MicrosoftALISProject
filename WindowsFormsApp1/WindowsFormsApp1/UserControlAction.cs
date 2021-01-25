@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+
+
 namespace WindowsFormsApp1
 {
     public partial class UserControlAction : UserControl
@@ -15,19 +17,30 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+
         public void AddListToView(List<Theme> listTheme)
         {
             var items = ThemeView.Items;
             var words = wordCloudlistView.Items;
+
+            int themeIndex = 0;
+            
             foreach (var value in listTheme)
             {
+                //color assignement
+                Color themeColor = value.colorList[ themeIndex ];
+                themeIndex++;
+
                 ListViewItem item = new ListViewItem(value.Title);
+                item.BackColor = themeColor;
                 item.Checked = true;
                 items.Add(item);
                 List<ListViewItem> allWords = new List<ListViewItem>();
                 foreach (var w in value.Words)
                 {
                     ListViewItem itemword = new ListViewItem(w);
+                    
+                    itemword.BackColor = themeColor;
                     words.Add(itemword);
                     allWords.Add(itemword);
                 }
