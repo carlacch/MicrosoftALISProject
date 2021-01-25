@@ -102,6 +102,7 @@ namespace WindowsFormsApp1
             this.ThemeView.TabIndex = 22;
             this.ThemeView.UseCompatibleStateImageBehavior = false;
             this.ThemeView.View = System.Windows.Forms.View.List;
+            this.ThemeView.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ThemeView_ItemCheck);
             // 
             // btnInterpellate
             // 
