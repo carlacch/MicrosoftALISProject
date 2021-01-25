@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             this.btnEmergency.Name = "btnEmergency";
             this.btnEmergency.Size = new System.Drawing.Size(154, 59);
             this.btnEmergency.TabIndex = 14;
-            this.btnEmergency.Text = "Appel d\'Urgence";
+            this.btnEmergency.Text = "Appel Aidant";
             this.btnEmergency.UseVisualStyleBackColor = false;
             // 
             // wordCloudlistView
