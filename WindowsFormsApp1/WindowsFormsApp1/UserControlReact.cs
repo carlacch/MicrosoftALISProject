@@ -96,17 +96,14 @@ namespace WindowsFormsApp1
             }
         }
 
-        public async Task GetSpeech(string uri)
+        public async Task GetSpeech(string uri, bool userClick, bool automatic)
         {
             System.Diagnostics.Debug.WriteLine("Test execution");
-            await ALEXA();
 
-            //bool fixAutomaticRequestLoopWhenUserClick = false;
-            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
-            //request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+            await voiceRecognition(userClick, automatic);
 
-            //using (HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync())
-            //using (Stream stream = response.GetResponseStream())
+            
+
             //using (StreamReader reader = new StreamReader(stream))
             //{
             //    string result = await reader.ReadToEndAsync();
@@ -114,7 +111,7 @@ namespace WindowsFormsApp1
             //    {
             //        Form1 parentForm = this.Parent as Form1;
             //        parentForm.userControlReact.BringToFront();
-            //        // Si vous voyez ça, soyez indulgent l'intégration dpython APIe la reconnaissance vocale à été faites à 5h du matin donc le code est peut être pas parfait ;)
+            //        // Si vous voyez ça, soyez indulgent l'intégration de la reconnaissance vocale à été faites à 5h du matin donc le code est peut être pas parfait ;)
             //    }
 
             //    if (result == "Automatic recognition stopped by the user") { fixAutomaticRequestLoopWhenUserClick = true; }
@@ -150,7 +147,7 @@ namespace WindowsFormsApp1
 
             if (listen == false)
             {
-                System.Diagnostics.Debug.WriteLine("\nAlexa > Je fais semblant de pas écouter...");
+                System.Diagnostics.Debug.WriteLine("Ecoute passive...");
             }
             else
             {
@@ -161,41 +158,87 @@ namespace WindowsFormsApp1
 
         }
 
-        static async Task ALEXA()
+        public static Tuple<string, bool> stopRecognition(string text, List<string> stopWords)
+        {
+            bool listeningStatus = true;
+            foreach (string word in stopWords)
+            {
+                if (text.Contains(word))
+                {
+                    System.Diagnostics.Debug.WriteLine("stopWord found");
+                    listeningStatus = false;
+                }
+                text = text.Replace(word, "");
+            }
+            return Tuple.Create(text, listeningStatus);
+        }
+
+        public static class Global
+        {
+             public static bool STOP_AUTOMATIC { get; set; }
+        }
+
+        public async Task voiceRecognition(bool userClick, bool automatic)
         {
             bool activate = true;
             bool listen = false;
+            string startWord = "Arthur";
+            List<string> stopWords = new List<string> { "Stop", "stop" };
 
-            string startWord = "Alexa";
-            string stopWords = "stop";
-            /*
-            List<string> stopWords = new List<string>();
-            stopWords.Add("stop");
-            stopWords.Add("Stop");
-            */
+            if (userClick) listen = true;
+
+            //bool startResponse = false;
+            List<string> response = new List<string>();
+
+            if (userClick) Global.STOP_AUTOMATIC = true;
+
+            System.Diagnostics.Debug.WriteLine("AUTOMATIC: "+Global.STOP_AUTOMATIC);
+
             while (activate)
             {
-                string text = await stringFromMic(true);
+                if (Global.STOP_AUTOMATIC && automatic)
+                {
+                    response.Clear();
+                    response.Add("Automatic recognition stopped by the user");
+                }
+
+                string text = startWord;
+                if (!userClick) text = await stringFromMic(listen);
+
                 if (text.Contains(startWord))
                 {
                     listen = true;
-                    Console.WriteLine("Alexa > J'ai été invoqué par la phrase: " + text);
+                    //if (!userClick) response.Add(text);
+
+                    // Condition to lead the user to the react tab where the sentences are heard
+                    Form1 parentForm = this.Parent as Form1;
+                    if (parentForm.Controls.GetChildIndex(parentForm.userControlReact) != 0)
+                    {
+                        parentForm.userControlReact.BringToFront();
+                        SentenceslistView.Clear();
+                    }
+
+                    if (!automatic) text = ""; else SentenceslistView.Items.Add(text);
+
                     while (listen)
                     {
                         text = await stringFromMic(listen);
-                        foreach (string word in stopWords.Split())
+                        var stopOnGo = stopRecognition(text, stopWords);
+
+                        if (stopOnGo.Item2)
                         {
-                            if (text.Contains(word))
-                            {
-                                Console.WriteLine("stopWord found");
-                                activate = false;
-                                listen = false;
-                            }
+                            activate = false;
+                            listen = false;
                         }
+
+                        SentenceslistView.Items.Add(stopOnGo.Item1);
                     }
                 }
             }
 
+            if (userClick) Global.STOP_AUTOMATIC = false;
+
+            return;
         }
 
         private void SentenceslistView_SelectedIndexChanged(object sender, EventArgs e)
