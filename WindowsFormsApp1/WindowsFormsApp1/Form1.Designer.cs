@@ -187,6 +187,7 @@
             this.btnSpeak.FlatAppearance.BorderSize = 0;
             this.btnSpeak.Name = "btnSpeak";
             this.btnSpeak.UseVisualStyleBackColor = false;
+            this.btnSpeak.Click += new System.EventHandler(this.btnSpeak_Click);
             // 
             // userControlStandard
             // 
