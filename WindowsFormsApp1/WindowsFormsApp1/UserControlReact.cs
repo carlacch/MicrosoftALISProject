@@ -8,6 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Net;
 using System.IO;
+using Microsoft.CognitiveServices.Speech;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -97,39 +98,104 @@ namespace WindowsFormsApp1
 
         public async Task GetSpeech(string uri)
         {
-            bool fixAutomaticRequestLoopWhenUserClick = false;
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
-            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+            System.Diagnostics.Debug.WriteLine("Test execution");
+            await ALEXA();
 
-            using (HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync())
-            using (Stream stream = response.GetResponseStream())
-            using (StreamReader reader = new StreamReader(stream))
+            //bool fixAutomaticRequestLoopWhenUserClick = false;
+            //HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+            //request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            //using (HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync())
+            //using (Stream stream = response.GetResponseStream())
+            //using (StreamReader reader = new StreamReader(stream))
+            //{
+            //    string result = await reader.ReadToEndAsync();
+            //    if (result.IndexOf("Arthur") != -1)
+            //    {
+            //        Form1 parentForm = this.Parent as Form1;
+            //        parentForm.userControlReact.BringToFront();
+            //        // Si vous voyez ça, soyez indulgent l'intégration dpython APIe la reconnaissance vocale à été faites à 5h du matin donc le code est peut être pas parfait ;)
+            //    }
+
+            //    if (result == "Automatic recognition stopped by the user") { fixAutomaticRequestLoopWhenUserClick = true; }
+
+            //    SentenceslistView.Clear();
+            //    if (!fixAutomaticRequestLoopWhenUserClick)
+            //    {
+            //        string[] sentences = result.Split('/');
+            //        foreach (var sentence in sentences)
+            //        {
+            //            SentenceslistView.Items.Add(sentence);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        SentenceslistView.Items.Add("Phase en cours de détection...");
+            //    }
+            //}
+            //if (!fixAutomaticRequestLoopWhenUserClick) { await GetSpeech("http://localhost:5000/getSpeechAutomatic"); }
+        }
+
+        public static async Task<string> stringFromMic(bool listen)
+        {
+            var speech_key = "c06aeb4d93b24003a125aa2adef59aaa";
+            var service_region = "francecentral";
+
+            var config = SpeechConfig.FromSubscription(speech_key, service_region);
+            config.SpeechRecognitionLanguage = "fr-FR";
+
+            var recognizer = new SpeechRecognizer(config);
+
+            var result = await recognizer.RecognizeOnceAsync();
+
+            if (listen == false)
             {
-                string result = await reader.ReadToEndAsync();
-                if (result.IndexOf("Arthur") != -1)
-                {
-                    Form1 parentForm = this.Parent as Form1;
-                    parentForm.userControlReact.BringToFront();
-                    // Si vous voyez ça, soyez indulgent l'intégration dpython APIe la reconnaissance vocale à été faites à 5h du matin donc le code est peut être pas parfait ;)
-                }
+                System.Diagnostics.Debug.WriteLine("\nAlexa > Je fais semblant de pas écouter...");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("Humain: " + result.Text);
+            }
 
-                if (result == "Automatic recognition stopped by the user") { fixAutomaticRequestLoopWhenUserClick = true; }
+            return result.Text;
 
-                SentenceslistView.Clear();
-                if (!fixAutomaticRequestLoopWhenUserClick)
+        }
+
+        static async Task ALEXA()
+        {
+            bool activate = true;
+            bool listen = false;
+
+            string startWord = "Alexa";
+            string stopWords = "stop";
+            /*
+            List<string> stopWords = new List<string>();
+            stopWords.Add("stop");
+            stopWords.Add("Stop");
+            */
+            while (activate)
+            {
+                string text = await stringFromMic(true);
+                if (text.Contains(startWord))
                 {
-                    string[] sentences = result.Split('/');
-                    foreach (var sentence in sentences)
+                    listen = true;
+                    Console.WriteLine("Alexa > J'ai été invoqué par la phrase: " + text);
+                    while (listen)
                     {
-                        SentenceslistView.Items.Add(sentence);
+                        text = await stringFromMic(listen);
+                        foreach (string word in stopWords.Split())
+                        {
+                            if (text.Contains(word))
+                            {
+                                Console.WriteLine("stopWord found");
+                                activate = false;
+                                listen = false;
+                            }
+                        }
                     }
                 }
-                else
-                {
-                    SentenceslistView.Items.Add("Phase en cours de détection...");
-                }
             }
-            if (!fixAutomaticRequestLoopWhenUserClick) { await GetSpeech("http://localhost:5000/getSpeechAutomatic"); }
+
         }
 
         private void SentenceslistView_SelectedIndexChanged(object sender, EventArgs e)

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "WindowsFormsApp1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "speech_key": "c06aeb4d93b24003a125aa2adef59aaa",
+        "service_region": "francecentral",
+        "Clé": "Valeur"
+      }
+    }
+  }
+}
