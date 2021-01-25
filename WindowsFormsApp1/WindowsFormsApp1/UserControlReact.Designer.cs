@@ -58,6 +58,7 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 131F));
@@ -89,22 +90,24 @@ namespace WindowsFormsApp1
             this.SentenceslistView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
             this.SentenceslistView.Location = new System.Drawing.Point(3, 3);
+            //this.SentenceslistView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SentenceslistView.Name = "SentenceslistView";
-            this.SentenceslistView.Size = new System.Drawing.Size(898, 125);
+            this.SentenceslistView.Size = new System.Drawing.Size(898,125);
             this.SentenceslistView.TabIndex = 0;
             this.SentenceslistView.TileSize = new System.Drawing.Size(870, 44);
             this.SentenceslistView.UseCompatibleStateImageBehavior = false;
             this.SentenceslistView.View = System.Windows.Forms.View.Tile;
+            this.SentenceslistView.SelectedIndexChanged += new System.EventHandler(this.SentenceslistView_SelectedIndexChanged);
             // 
             // ThemeView
             // 
             this.ThemeView.CheckBoxes = true;
             this.ThemeView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ThemeView.HideSelection = false;
-            this.ThemeView.Location = new System.Drawing.Point(907, 134);
+            this.ThemeView.Location = new System.Drawing.Point(907,134);
             this.ThemeView.Margin = new System.Windows.Forms.Padding(3, 3, 3, 4);
             this.ThemeView.Name = "ThemeView";
-            this.ThemeView.Size = new System.Drawing.Size(154, 480);
+            this.ThemeView.Size = new System.Drawing.Size(154,480);
             this.ThemeView.TabIndex = 1;
             this.ThemeView.UseCompatibleStateImageBehavior = false;
             this.ThemeView.View = System.Windows.Forms.View.List;
@@ -132,6 +135,7 @@ namespace WindowsFormsApp1
             this.btnSmiley.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSmiley.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSmiley.Location = new System.Drawing.Point(84, 3);
+            //this.btnSmiley.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSmiley.Name = "btnSmiley";
             this.btnSmiley.Size = new System.Drawing.Size(73, 123);
             this.btnSmiley.TabIndex = 9;
@@ -160,6 +164,7 @@ namespace WindowsFormsApp1
             this.btnOui.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnOui.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnOui.Location = new System.Drawing.Point(3, 3);
+            this.btnOui.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOui.Name = "btnOui";
             this.btnOui.Size = new System.Drawing.Size(75, 58);
             this.btnOui.TabIndex = 0;
@@ -173,6 +178,7 @@ namespace WindowsFormsApp1
             this.btnNon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNon.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNon.Location = new System.Drawing.Point(3, 67);
+            //this.btnNon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNon.Name = "btnNon";
             this.btnNon.Size = new System.Drawing.Size(75, 59);
             this.btnNon.TabIndex = 1;
@@ -194,6 +200,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            //this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserControlReact";
             this.Size = new System.Drawing.Size(1064, 618);
             this.tableLayoutPanel1.ResumeLayout(false);

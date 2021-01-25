@@ -4,6 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Net;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -89,6 +93,48 @@ namespace WindowsFormsApp1
                 parentForm.finalSentence_GotFocus(sender, e);
                 parentForm.finalSentence.Text += selectedItem[0].Text + " ";
             }
+        }
+
+        public async Task GetSpeech(string uri)
+        {
+            bool fixAutomaticRequestLoopWhenUserClick = false;
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            using (HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                string result = await reader.ReadToEndAsync();
+                if (result.IndexOf("Arthur") != -1)
+                {
+                    Form1 parentForm = this.Parent as Form1;
+                    parentForm.userControlReact.BringToFront();
+                    // Si vous voyez ça, soyez indulgent l'intégration dpython APIe la reconnaissance vocale à été faites à 5h du matin donc le code est peut être pas parfait ;)
+                }
+
+                if (result == "Automatic recognition stopped by the user") { fixAutomaticRequestLoopWhenUserClick = true; }
+
+                SentenceslistView.Clear();
+                if (!fixAutomaticRequestLoopWhenUserClick)
+                {
+                    string[] sentences = result.Split('/');
+                    foreach (var sentence in sentences)
+                    {
+                        SentenceslistView.Items.Add(sentence);
+                    }
+                }
+                else
+                {
+                    SentenceslistView.Items.Add("Phase en cours de détection...");
+                }
+            }
+            if (!fixAutomaticRequestLoopWhenUserClick) { await GetSpeech("http://localhost:5000/getSpeechAutomatic"); }
+        }
+
+        private void SentenceslistView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -77,10 +77,12 @@ namespace WindowsFormsApp1
             }
         }
 
+
         private void btnListen_Click(object sender, EventArgs e)
         {
             Form1 parentForm = this.Parent as Form1;
             parentForm.userControlReact.BringToFront();
+            var task = parentForm.userControlReact.GetSpeech("http://localhost:5000/getSpeechClicked");
         }
     }
 }

@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
+using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
 
@@ -20,6 +22,7 @@ namespace WindowsFormsApp1
             finalSentence.ForeColor = Color.Gray;
             finalSentence.GotFocus += new EventHandler(finalSentence_GotFocus);
             finalSentence.LostFocus += new EventHandler(finalSentence_LostFocus);
+            var task = userControlReact.GetSpeech("http://localhost:5000/getSpeechAutomatic");
         }
         
         public void ExecuteAsAdmin(string fileName)
@@ -163,6 +166,26 @@ namespace WindowsFormsApp1
         {
             ExecuteAsAdmin(@"osk.exe");
             finalSentence.Focus();
+        }
+
+        public async Task<string> shutdownAPI()
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://localhost:5000/shutdown");
+            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+            using (HttpWebResponse response = (HttpWebResponse)await request.GetResponseAsync())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                return await reader.ReadToEndAsync();
+            }
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            var task = shutdownAPI();
+            System.Threading.Thread.Sleep(2000);
+            base.OnFormClosing(e);
         }
     }
 }
