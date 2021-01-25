@@ -14,7 +14,7 @@ with open("../Config/AppConfig","r") as configFile:
 	for line in configFile:
 		line = line.strip('\n')
 		if len(line):
-			values = line.split(' = ')
+			values = line.split('=')
 			configVariables[values[0][1:-1]] = values[1]
 
 app = Flask(__name__)
