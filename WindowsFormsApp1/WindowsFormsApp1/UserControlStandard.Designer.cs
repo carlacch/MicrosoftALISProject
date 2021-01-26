@@ -117,6 +117,7 @@ namespace WindowsFormsApp1
             this.btnInterpellate.TabIndex = 14;
             this.btnInterpellate.Text = "Interpeller";
             this.btnInterpellate.UseVisualStyleBackColor = false;
+            this.btnInterpellate.Click += new System.EventHandler(this.btnInterpellate_Click_1);
             // 
             // btnListen
             // 
