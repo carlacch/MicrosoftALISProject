@@ -162,6 +162,7 @@
             // 
             resources.ApplyResources(this.finalSentence, "finalSentence");
             this.finalSentence.Name = "finalSentence";
+            this.finalSentence.TextChanged += new System.EventHandler(this.finalSentence_TextChanged);
             // 
             // btnWand
             // 

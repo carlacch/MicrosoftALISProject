@@ -9,6 +9,11 @@ using Microsoft.CognitiveServices.Speech;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using System.Net.Http;
+using System.Net.Http.Headers;
+//using System.Net.Http.Formatting;
+using Newtonsoft.Json;
+using DocumentFormat.OpenXml.ExtendedProperties;
 
 namespace WindowsFormsApp1
 {
@@ -24,6 +29,8 @@ namespace WindowsFormsApp1
 
         public void AddListToView(List<Theme> listTheme)
         {
+            ThemeView.Clear();
+            wordCloudlistView.Clear();
             var items = ThemeView.Items;
             var words = wordCloudlistView.Items;
 
@@ -102,9 +109,10 @@ namespace WindowsFormsApp1
             var selectedItem = wordCloudlistView.SelectedItems;
             if (selectedItem.Count > 0) 
             {
+                var temp = selectedItem[0].Text;
                 Form1 parentForm = (this.Parent as Form1);
                 parentForm.finalSentence_GotFocus(sender, e);
-                parentForm.finalSentence.Text += selectedItem[0].Text + " ";
+                parentForm.finalSentence.Text += temp + " ";
             }
         }
 
@@ -248,6 +256,17 @@ namespace WindowsFormsApp1
                     Global.STOP_WORDS = values.ToList();
                 }
             }
+        }
+
+        public async Task<List<List<String>>> GetPredict(String sentence)
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://localhost:5001/");
+            string json = JsonConvert.ToString(sentence);
+
+            HttpResponseMessage response = await client.PostAsync("api/predictNext", new StringContent(sentence, Encoding.UTF8, "text/plain"));
+
+            return JsonConvert.DeserializeObject<List<List<string>>>(response.Content.ReadAsStringAsync().Result);
         }
 
         private void SentenceslistView_SelectedIndexChanged(object sender, EventArgs e)

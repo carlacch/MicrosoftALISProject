@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
             finalSentence.LostFocus += new EventHandler(finalSentence_LostFocus);
             var task = userControlReact.GetSpeech(false);
         }
-        
+
         public void ExecuteAsAdmin(string fileName)
         {
             Process proc = new Process();
@@ -108,7 +108,7 @@ namespace WindowsFormsApp1
         private void userControlAction_Load(object sender, EventArgs e)
         {
             var listThemes = GetThemes();
-            userControlAction.AddListToView(listThemes);      
+            userControlAction.AddListToView(listThemes);
         }
 
         private void userControlReact_Load(object sender, EventArgs e)
@@ -159,7 +159,7 @@ namespace WindowsFormsApp1
             finalSentence.Text = sentence;
         }
 
-        
+
 
         private void btnKeyboard_Click(object sender, EventArgs e)
         {
@@ -206,6 +206,54 @@ namespace WindowsFormsApp1
         private async void btnSpeak_Click(object sender, EventArgs e)
         {
             await Speak(finalSentence.Text);
+        }
+
+        public Dictionary<string, string> getThemesDict()
+        {
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+
+            dict.Add("ADJ", "Adjectif");
+            dict.Add("ADV", "Adverbe");
+            dict.Add("ADP", "Determinant");
+            dict.Add("DET", "Determinant");
+            dict.Add("PRON", "Pronom");
+            dict.Add("PROPN", "Nom Propre");
+            dict.Add("NOUN", "Nom Commun");
+            dict.Add("VERB", "Verbe");
+            dict.Add("PUNCT", "Ponctuation");
+            dict.Add("CCONJ", "aucune idée");
+
+            return dict;
+        }
+
+        private async void finalSentence_TextChanged(object sender, EventArgs e)
+        {
+            List<Theme> listThemes = new List<Theme>();
+            if (!finalSentence.Text.Equals(String.Empty) & !finalSentence.Text.Equals("Phrase en cours de composition"))
+            {
+                var a = userControlReact.GetPredict(finalSentence.Text);
+                List<List<string>> mots = await userControlReact.GetPredict(finalSentence.Text);
+                Dictionary<string, string> dict = getThemesDict();
+                for (int i = 0; i < mots.Count(); i++)
+                {
+                    Theme result = listThemes.Find(x => x.Title.Equals(dict[mots[i][1]]));
+                    if (result != null)
+                    {
+                        result.AddWord(mots[i][0]);
+                    }
+                    else
+                    {
+                        Theme theme = new Theme(dict[mots[i][1]]);
+                        theme.AddWord(mots[i][0]);
+                        listThemes.Add(theme);
+                    }
+                }
+            }
+            userControlReact.AddListToView(listThemes);
+            foreach (var i in listThemes)
+            {
+                System.Diagnostics.Debug.WriteLine(i.Title);
+            }
         }
     }
 }
