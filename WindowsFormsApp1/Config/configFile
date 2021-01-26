@@ -1,0 +1,7 @@
+# [USER PARAMETERS]
+
+USERNAME=Arthur
+
+# [VOCAL RECOGNITION ]
+
+STOP_WORDS=stop/Stop/stop./Stop.

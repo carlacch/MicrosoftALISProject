@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.CognitiveServices.Speech;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -17,6 +19,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
             Global.SPEECH_API_KEY = Environment.GetEnvironmentVariable("speech_key");
             Global.SPEECH_SERVICE_REGION = Environment.GetEnvironmentVariable("service_region");
+            getParameters();
         }
 
         public void AddListToView(List<Theme> listTheme)
@@ -105,12 +108,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        public static class Global
-        {
-            public static bool STOP_AUTOMATIC { get; set; }
-            public static string SPEECH_API_KEY { get; set; }
-            public static string SPEECH_SERVICE_REGION { get; set; }
-        }
+        
 
         public async Task GetSpeech(bool userClick)
         {
@@ -163,8 +161,8 @@ namespace WindowsFormsApp1
         {
             bool activate = true;
             bool listen = false;
-            string startWord = "Arthur";
-            List<string> stopWords = new List<string> { "Stop", "stop" };
+            string startWord = Global.USERNAME;
+            List<string> stopWords = Global.STOP_WORDS;
 
             if (userClick)
             {
@@ -225,10 +223,45 @@ namespace WindowsFormsApp1
             if (userClick) Global.STOP_AUTOMATIC = false;
         }
 
+        public static void getParameters()
+        {
+            string backKeys = "";
+            string projectPath = Path.GetDirectoryName(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, backKeys)));
+
+            while (!Directory.Exists(@projectPath + "\\Config"))
+            {
+                backKeys += "..\\";
+                projectPath = Path.GetDirectoryName(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, backKeys)));
+            }
+
+            System.Diagnostics.Debug.WriteLine(projectPath);
+
+            string[] lines = File.ReadAllLines(projectPath + "\\Config\\configFile");
+
+            foreach (string line in lines)
+            {
+                if (line.Contains("USERNAME")) Global.USERNAME = line.Split('=')[1];
+                if (line.Contains("STOP_WORDS"))
+                {
+                    string[] values = line.Split('=')[1].Split('/');
+                    Array.Sort(values, (x, y) => y.Length.CompareTo(x.Length));
+                    Global.STOP_WORDS = values.ToList();
+                }
+            }
+        }
+
         private void SentenceslistView_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
     }
 
+    public static class Global
+    {
+        public static bool STOP_AUTOMATIC { get; set; }
+        public static string SPEECH_API_KEY { get; set; }
+        public static string SPEECH_SERVICE_REGION { get; set; }        
+        public static string USERNAME { get; set; }
+        public static List<string> STOP_WORDS { get; set; }
+    }
 }
