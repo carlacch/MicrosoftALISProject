@@ -18,6 +18,8 @@ namespace WindowsFormsApp1
         public UserControlReact()
         {
             InitializeComponent();
+            Global.SPEECH_API_KEY = Environment.GetEnvironmentVariable("speech_key");
+            Global.SPEECH_SERVICE_REGION = Environment.GetEnvironmentVariable("service_region");
         }
 
         public void AddListToView(List<Theme> listTheme)
@@ -51,7 +53,7 @@ namespace WindowsFormsApp1
             parentForm.finalSentence.Text = "Oui ";
             parentForm.finalSentence.ForeColor = Color.Black;
         }
-        
+
         private void btnNon_Click(object sender, EventArgs e)
         {
             Form1 parentForm = (this.Parent as Form1);
@@ -88,7 +90,7 @@ namespace WindowsFormsApp1
         private void wordCloudlistView_SelectedIndexChanged(object sender, EventArgs e)
         {
             var selectedItem = wordCloudlistView.SelectedItems;
-            if (selectedItem.Count > 0) 
+            if (selectedItem.Count > 0)
             {
                 Form1 parentForm = (this.Parent as Form1);
                 parentForm.finalSentence_GotFocus(sender, e);
@@ -96,47 +98,24 @@ namespace WindowsFormsApp1
             }
         }
 
-        public async Task GetSpeech(string uri, bool userClick, bool automatic)
+        public static class Global
         {
-            System.Diagnostics.Debug.WriteLine("Test execution");
+            public static bool STOP_AUTOMATIC { get; set; }
+            public static string SPEECH_API_KEY { get; set; }
+            public static string SPEECH_SERVICE_REGION { get; set; }
+        }
 
-            await voiceRecognition(userClick, automatic);
-
-            
-
-            //using (StreamReader reader = new StreamReader(stream))
-            //{
-            //    string result = await reader.ReadToEndAsync();
-            //    if (result.IndexOf("Arthur") != -1)
-            //    {
-            //        Form1 parentForm = this.Parent as Form1;
-            //        parentForm.userControlReact.BringToFront();
-            //        // Si vous voyez ça, soyez indulgent l'intégration de la reconnaissance vocale à été faites à 5h du matin donc le code est peut être pas parfait ;)
-            //    }
-
-            //    if (result == "Automatic recognition stopped by the user") { fixAutomaticRequestLoopWhenUserClick = true; }
-
-            //    SentenceslistView.Clear();
-            //    if (!fixAutomaticRequestLoopWhenUserClick)
-            //    {
-            //        string[] sentences = result.Split('/');
-            //        foreach (var sentence in sentences)
-            //        {
-            //            SentenceslistView.Items.Add(sentence);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        SentenceslistView.Items.Add("Phase en cours de détection...");
-            //    }
-            //}
-            //if (!fixAutomaticRequestLoopWhenUserClick) { await GetSpeech("http://localhost:5000/getSpeechAutomatic"); }
+        public async Task GetSpeech(bool userClick)
+        {
+            await voiceRecognition(userClick);
+            // At the end of each voiceRecognition, the automatic listening start again so userClick is set to false
+            if (!Global.STOP_AUTOMATIC) await GetSpeech(false);
         }
 
         public static async Task<string> stringFromMic(bool listen)
         {
-            var speech_key = "c06aeb4d93b24003a125aa2adef59aaa";
-            var service_region = "francecentral";
+            var speech_key = Global.SPEECH_API_KEY;
+            var service_region = Global.SPEECH_SERVICE_REGION;
 
             var config = SpeechConfig.FromSubscription(speech_key, service_region);
             config.SpeechRecognitionLanguage = "fr-FR";
@@ -173,72 +152,72 @@ namespace WindowsFormsApp1
             return Tuple.Create(text, listeningStatus);
         }
 
-        public static class Global
-        {
-             public static bool STOP_AUTOMATIC { get; set; }
-        }
-
-        public async Task voiceRecognition(bool userClick, bool automatic)
+        public async Task voiceRecognition(bool userClick)
         {
             bool activate = true;
             bool listen = false;
             string startWord = "Arthur";
             List<string> stopWords = new List<string> { "Stop", "stop" };
 
-            if (userClick) listen = true;
-
-            //bool startResponse = false;
-            List<string> response = new List<string>();
-
-            if (userClick) Global.STOP_AUTOMATIC = true;
-
-            System.Diagnostics.Debug.WriteLine("AUTOMATIC: "+Global.STOP_AUTOMATIC);
+            if (userClick)
+            {
+                listen = true;
+                Global.STOP_AUTOMATIC = true;
+            }
 
             while (activate)
             {
-                if (Global.STOP_AUTOMATIC && automatic)
+                System.Diagnostics.Debug.WriteLine("AUTOMATIC ACTIVATION: " + !Global.STOP_AUTOMATIC);
+
+                if (Global.STOP_AUTOMATIC && !userClick)
                 {
-                    response.Clear();
-                    response.Add("Automatic recognition stopped by the user");
+                    return;
                 }
 
                 string text = startWord;
-                if (!userClick) text = await stringFromMic(listen);
+                bool stopOnGoFirstListeningStatus = true;
+                if (!userClick)
+                {
+                    text = await stringFromMic(listen);
+                    var stopOnGoFirst = stopRecognition(text, stopWords);
+                    text = stopOnGoFirst.Item1;
+                    stopOnGoFirstListeningStatus = stopOnGoFirst.Item2;
+                }
 
                 if (text.Contains(startWord))
                 {
                     listen = true;
-                    //if (!userClick) response.Add(text);
 
                     // Condition to lead the user to the react tab where the sentences are heard
                     Form1 parentForm = this.Parent as Form1;
                     if (parentForm.Controls.GetChildIndex(parentForm.userControlReact) != 0)
                     {
                         parentForm.userControlReact.BringToFront();
-                        SentenceslistView.Clear();
                     }
+                    SentenceslistView.Clear();
 
-                    if (!automatic) text = ""; else SentenceslistView.Items.Add(text);
+                    if (userClick) text = ""; else SentenceslistView.Items.Add(text);
+                    // If the user say the starting word and a stopping word in the same sentence then
+                    // the automatic recognition has to restart
+                    if (!stopOnGoFirstListeningStatus) return;
 
                     while (listen)
                     {
                         text = await stringFromMic(listen);
-                        var stopOnGo = stopRecognition(text, stopWords);
+                        var stopOnGoSecond = stopRecognition(text, stopWords);
 
-                        if (stopOnGo.Item2)
+                        if (!stopOnGoSecond.Item2)
                         {
                             activate = false;
                             listen = false;
                         }
 
-                        SentenceslistView.Items.Add(stopOnGo.Item1);
+                        if (stopOnGoSecond.Item1.Length != 0) SentenceslistView.Items.Add(stopOnGoSecond.Item1);
                     }
                 }
             }
 
             if (userClick) Global.STOP_AUTOMATIC = false;
-
-            return;
         }
 
         private void SentenceslistView_SelectedIndexChanged(object sender, EventArgs e)

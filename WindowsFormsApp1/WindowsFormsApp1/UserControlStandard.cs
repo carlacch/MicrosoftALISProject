@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
         {
             Form1 parentForm = this.Parent as Form1;
             parentForm.userControlReact.BringToFront();
-            var task = parentForm.userControlReact.GetSpeech("http://localhost:5000/getSpeechClicked", true, false);
+            var task = parentForm.userControlReact.GetSpeech(true);
         }
     }
 }
