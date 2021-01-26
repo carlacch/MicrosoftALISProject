@@ -91,6 +91,7 @@ namespace WindowsFormsApp1
         {
             Form1 parentForm = this.Parent as Form1;
             parentForm.userControlReact.BringToFront();
+            var task = parentForm.userControlReact.GetSpeech(true);
         }
     }
 }

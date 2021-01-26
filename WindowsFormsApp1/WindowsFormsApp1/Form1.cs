@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
             finalSentence.ForeColor = Color.Gray;
             finalSentence.GotFocus += new EventHandler(finalSentence_GotFocus);
             finalSentence.LostFocus += new EventHandler(finalSentence_LostFocus);
+            var task = userControlReact.GetSpeech(false);
         }
         
         public void ExecuteAsAdmin(string fileName)
