@@ -13,10 +13,11 @@ namespace WindowsFormsApp1
 
 
         // colors possible
-        public List<Color> colorList = new List<Color>{  Color.LightBlue, Color.LightGreen, Color.LightSalmon, Color.RosyBrown, Color.YellowGreen, Color.OrangeRed, Color.Yellow,   Color.Cyan};
+        public List<Color> colorList = new List<Color>{  Color.LightBlue, Color.LightGreen, Color.LightSalmon, Color.RosyBrown, Color.YellowGreen, Color.OrangeRed, Color.Yellow,   Color.Cyan, Color.FromArgb(255, 232, 232), Color.FromArgb(255, 232, 232), Color.FromArgb(255, 232, 232), Color.FromArgb(255, 232, 232) };
 
         public Theme(string title) {
             this.title = title;
+            this.words = new List<string>();
         }
 
         public Theme(string title, string word)

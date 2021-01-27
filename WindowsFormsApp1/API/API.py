@@ -75,12 +75,12 @@ def currentWord(text):
     if text[len(text)-1] != " ":
         words = text.split(" ")
         writing = words[len(words)-1]
-        predictions = nextWord(" ".join(words[:(len(words)-1)]), 10)
+        predictions = nextWord(" ".join(words[:(len(words)-1)]), 50)
         for pred in predictions:
             if (pred.startswith(writing)):
                 result.append(pred)
     else:
-        return(nextWord(text, 10))
+        return(nextWord(text, 50))
     return result;
 
 #API
@@ -99,5 +99,5 @@ def predict():
 #Retour du résultat
 if __name__ == '__main__':
 
-    model = pickle.load(open('API\model.pickle', 'rb'))
+    model = pickle.load(open('model.pickle', 'rb'))
     app.run(port=5001, debug=True)

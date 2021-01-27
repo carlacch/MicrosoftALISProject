@@ -86,52 +86,105 @@ namespace WindowsFormsApp1
             userControlStandard.BringToFront();
         }
 
-        List<Theme> GetThemes()
+        List<Theme> GetThemesStandard()
         {
-            Theme thVerbe = new Theme("Verbe", new List<string> { "manger", "boire", "faire", "laver", "aller" });
-            Theme thLocation = new Theme("Lieux", new List<string> { "maison", "dehors", "supermarché", "épicerie", "centre commercial", "parc" });
-            Theme thAdverbeTemps = new Theme("Adverbe de Temps", new List<string> { "depuis", "hier", "longtemps", "demain", "maintenant", "parfois", "toujours" });
-            Theme thAdverbe = new Theme("Adverbe de Manière", new List<string> { "lentement", "bien", "mieux", "pire", "plutôt", "mal", "comme" });
-            List<Theme> listThemes = new List<Theme> { thVerbe, thLocation, thAdverbeTemps, thAdverbe };
+            Theme thComplements = new Theme("Compléments", new List<string> { "Qui", "Quoi", "Quand", "Comment", "Combien" });
+            Theme thPronouns = new Theme("Pronoms", new List<string> { "j'", "je", "tu", "il", "elle", "on", "nous", "vous", "ils", "elles" });
+            Theme thVerbes = new Theme("Verbes", new List<string> { "être", "avoir", "faire", "donner", "voir", "aller", "prendre", "pouvoir", "passer", "tenir" });
+            Theme thAdjectives = new Theme("Adjectifs", new List<string> { "super", "autre", "bizarre", "drôle", "facile", "grave", "impossible", "propre" });
+            Theme thCommonNoun = new Theme("Noms Communs", new List<string> { "aide", "merci", "madame", "monsieur", "boite", "poche", "livre" });
+            Theme thAdverbs = new Theme("Adverbe", new List<string> { "bien", "comme", "mal", "mieux", "lentement", "vite", "aussi", "plutôt" });
+            Theme thNumbers = new Theme("Nombres", new List<string> { "1", "2", "3", "4", "5", "6", "7", "8", "9" });
+
+            List<Theme> listThemes = new List<Theme> { thComplements, thPronouns, thVerbes, thAdjectives, thCommonNoun, thAdverbs, thNumbers };
+            return listThemes;
+        }
+
+        List<Theme> GetThemesReact()
+        {
+
+            Theme thReactShort = new Theme("Réactions courtes", new List<string> { "merci", "s'il vous plait", "bonjour", "bonsoir", "au revoir", "à bientôt", });
+            Theme thReactLong = new Theme("Réactions longues", new List<string> { "J'ai mal entendu", "Je n'ai pas bien compris", "pouvez vous répéter ?" });
+            Theme thComplements = new Theme("Compléments", new List<string> { "qui", "quoi", "quand", "comment", "combien" });
+            Theme thPronouns = new Theme("Pronoms", new List<string> { "j'", "je", "tu", "il", "elle", "on", "nous", "vous", "ils", "elles" });
+            Theme thVerbes = new Theme("Verbes", new List<string> { "être", "avoir", "faire", "donner", "voir", "aller", "prendre", "pouvoir", "passer", "tenir" });
+
+            List<Theme> listThemes = new List<Theme> { thReactShort, thReactLong, thComplements, thPronouns, thVerbes };
             return listThemes;
         }
 
         List<Theme> GetThemesUrgency()
         {
             Theme thAssistance = new Theme("Assistance", new List<string> { "j'ai besoin d'aide", "aidez-moi", "à l'aide", "aide", "problème" });
-            Theme thLocation = new Theme("Lieux", new List<string> { "maison", "dehors", "main", "oeil", "ventre", "dos", "pied", "coeur", "poumon" });
-            Theme thMaux = new Theme("Maux", new List<string> { "mal", "douleur", "souffrance", "piqure", "gratte", "brûle" });
-            List<Theme> listThemes = new List<Theme> { thAssistance, thLocation, thMaux };
+            Theme thBody = new Theme("Corps", new List<string> { "main", "oeil", "ventre", "dos", "pied", "coeur", "poumon", "tête" });
+            Theme thMaux = new Theme("Maux", new List<string> { "mal", "douleur", "difficulté respiratoire", "souffrance", "piqure", "gratte", "brûle" });
+            Theme thLocations = new Theme("Lieux", new List<string> { "maison", "escalier", "dehors", "intérieur", "parc" });
+
+
+            List<Theme> listThemes = new List<Theme> { thAssistance, thBody, thMaux, thLocations };
+            return listThemes;
+        }
+        List<Theme> GetThemesAction()
+        {
+            Theme thMedical = new Theme("Médical", new List<string> { "Docteur", "j'ai mal", "ventre", "médicament", "pansement", "guérir", "soin", "ça pique" });
+            Theme thRepas = new Theme("Repas", new List<string> { "bon apétit", "faim", "boire", "puis je avoir", "dessert", "assaisonement", "viande", "légumes" });
+            Theme thToilets = new Theme("Toilettes", new List<string> { "toilettes", "J'ai fini", "besoin d'uriner", "numéro deux", });
+            Theme thHygiene = new Theme("Hygiène", new List<string> { "nettoyer les mains", "laver les dents", "brosser les cheveux", "raser", "maquiller" });
+
+            List<Theme> listThemes = new List<Theme> { thMedical, thRepas, thToilets, thHygiene };
+            return listThemes;
+        }
+
+        List<Theme> GetThemesLibrary()
+        {
+            Theme thWeather = new Theme("Météo", new List<string> { "météo", "température", "beau temps", "pluie", "chaud", "froid" });
+            Theme thNews = new Theme("Actualités", new List<string> { "corona", "brexit", "elections", "incendie", "grèves", "discours", "journal télévisé" });
+            Theme thGames = new Theme("Jeux", new List<string> { "jouer", "passer", "scrabble", "pioche", "tour", "carte" });
+            Theme thFilms = new Theme("Films", new List<string> { "regarder", "comédie", "action", "horreur", "fantasy", "science-fiction", "pause" });
+
+
+            List<Theme> listThemes = new List<Theme> { thWeather, thNews, thGames, thFilms };
+            return listThemes;
+        }
+
+        List<Theme> GetThemesLocation()
+        {
+            Theme thLocations = new Theme("Lieux", new List<string> { "maison", "dehors", "intérieur", "supermarché", "boulangerie", "épicerie", "centre commercial", "parc" });
+            Theme thLocations_House = new Theme("Maison", new List<string> { "chambre", "toilettes", "cuisine", "salon", "cave", "escalier" });
+            Theme thLocations_Shop = new Theme("Shop", new List<string> { "Acheter", "Quel est le prix ?", "c'est un peu cher", "en plus grand", "c'est trop petit", "Où puis je trouver", "Avez vous" });
+            Theme thLocations_Bakery = new Theme("Boulangerie", new List<string> { "baguette", "croissant", "pain au chocolat", "chouqettes", "feuilletés prâlinés" });
+
+            List<Theme> listThemes = new List<Theme> { thLocations, thLocations_House, thLocations_Shop, thLocations_Bakery };
             return listThemes;
         }
 
         private void userControlAction_Load(object sender, EventArgs e)
         {
-            var listThemes = GetThemes();
+            var listThemes = GetThemesAction();
             userControlAction.AddListToView(listThemes);
         }
 
         private void userControlReact_Load(object sender, EventArgs e)
         {
-            var listThemes = GetThemes();
+            var listThemes = GetThemesReact();
             userControlReact.AddListToView(listThemes);
         }
 
         private void userControlLibrary_Load(object sender, EventArgs e)
         {
-            var listThemes = GetThemes();
+            var listThemes = GetThemesLibrary();
             userControlLibrary.AddListToView(listThemes);
         }
 
         private void userControlLocation_Load(object sender, EventArgs e)
         {
-            var listThemes = GetThemes();
+            var listThemes = GetThemesLocation();
             userControlLocation.AddListToView(listThemes);
         }
 
         private void userControlStandard_Load(object sender, EventArgs e)
         {
-            var listThemes = GetThemes();
+            var listThemes = GetThemesStandard();
             userControlStandard.AddListToView(listThemes);
         }
 
@@ -218,10 +271,14 @@ namespace WindowsFormsApp1
             dict.Add("DET", "Determinant");
             dict.Add("PRON", "Pronom");
             dict.Add("PROPN", "Nom Propre");
-            dict.Add("NOUN", "Nom Commun");
+            dict.Add("NOUN", "Verbe");
             dict.Add("VERB", "Verbe");
             dict.Add("PUNCT", "Ponctuation");
-            dict.Add("CCONJ", "aucune idée");
+            dict.Add("CCONJ", "Conjonction de coordination");
+            dict.Add("SCONJ", "Conjonction de subordination");
+            dict.Add("AUX", "Auxiliaire");
+            dict.Add("X", "Pffff");
+            dict.Add("NUM", "Nombre");
 
             return dict;
         }
@@ -236,16 +293,32 @@ namespace WindowsFormsApp1
                 Dictionary<string, string> dict = getThemesDict();
                 for (int i = 0; i < mots.Count(); i++)
                 {
-                    Theme result = listThemes.Find(x => x.Title.Equals(dict[mots[i][1]]));
-                    if (result != null)
+                    string value;
+                    if (dict.TryGetValue(mots[i][1], out value))
                     {
-                        result.AddWord(mots[i][0]);
-                    }
-                    else
-                    {
-                        Theme theme = new Theme(dict[mots[i][1]]);
-                        theme.AddWord(mots[i][0]);
-                        listThemes.Add(theme);
+                        if (dict[mots[i][1]].Equals("Pffff"))
+                        {
+                            continue;
+                        }
+                        if (dict[mots[i][1]].Equals("Ponctuation"))
+                        {
+                            continue;
+                        }
+                        if (mots[i][0].Length == 1)
+                        {
+                            continue;
+                        }
+                        Theme result = listThemes.Find(x => x.Title.Equals(dict[mots[i][1]]));
+                        if (result != null)
+                        {
+                            result.AddWord(mots[i][0]);
+                        }
+                        else
+                        {
+                            Theme theme = new Theme(dict[mots[i][1]]);
+                            theme.AddWord(mots[i][0]);
+                            listThemes.Add(theme);
+                        }
                     }
                 }
             }
@@ -253,6 +326,10 @@ namespace WindowsFormsApp1
             foreach (var i in listThemes)
             {
                 System.Diagnostics.Debug.WriteLine(i.Title);
+            }
+            foreach (var i in GetThemesStandard())
+            {
+                listThemes.Add(i);
             }
         }
     }
