@@ -23,13 +23,13 @@ python -m spacy download fr_core_news_sm
 
 Notre interface WindowsForm se lance à partir du fichier [WindowsFormsApp1.sln](WindowsFormsApp1/WindowsFormsApp1.sln).  
 Une fois lancée, plusieurs page sont disponibles :  
-![aLIS_demo](WindowsFormsApp1\Images\demo\aLIS_demo.gif)
+![aLIS_demo](WindowsFormsApp1/Images/demo/aLIS_demo.gif)
 
-Chaque page est crée à l'aide d'un UserControl pour permettre ....
+Afin que cela soit clair et structuré, chaque page est créée à l'aide d'un UserControl.
 
-L'application inclu une partie reconnaisance vocale qui permet de détecter lorsqu'un intrelocuteur s'adresse à l'utilisateur par un mot prédéfini, en général le nom de l'utilisateur. La configuration du nom est possible en modifiant l'username dans les [configurations](WindowsFormsApp1\Config\configFile). Le but étant que, dans le futur, cela se fasse directement dans les paramètres de l'application.
+L'application inclu une partie reconnaisance vocale qui permet de détecter lorsqu'un intrelocuteur s'adresse à l'utilisateur par un mot prédéfini, en général le nom de l'utilisateur. La configuration du nom est possible en modifiant l'username dans les [configurations](WindowsFormsApp1/Config/configFile). Le but étant que, dans le futur, cela se fasse directement dans les paramètres de l'application.
 
-La partie synthèse vocale va rendre la parole à l'utilisateur en lui permetant d'exprimer ses idées à l'oral. C'est le bouton &nbsp;  ![vocal](WindowsFormsApp1\Images\speaking.png) &nbsp; qui permet cela. 
+La partie synthèse vocale va rendre la parole à l'utilisateur en lui permetant d'exprimer ses idées à l'oral. C'est le bouton &nbsp;  ![vocal](WindowsFormsApp1/Images/speaking.png) &nbsp; qui permet cela. 
 
 Pour toute la partie prédiction, nous utilisons l'API que nous avons développé, disponible [ici](WindowsFormsApp1\API).  
 
