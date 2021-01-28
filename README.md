@@ -10,7 +10,7 @@ Voici notre interface ergonomique pour la Communication Alternative Augmentée a
 
 L'application nécessite Visual Studio.
 Afin de pouvoir utiliser l'application, python et plusieurs librairies sont nécessaires.
-Les commandes suivantes permettent l'insatallation de ces librairies:
+Les commandes suivantes permettent l'installation de ces librairies:
 ```
 pip install "transformers==2.5.1"
 pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio===0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
@@ -52,7 +52,7 @@ La synthèse et la reconnaissance vocale sont implémentées via le module `Micr
   
   * Manuel - L'utilisateur lance la reconnaissance en cliquant sur le bouton **Ecouter**
 
-  Losrque la reconnaissance est activée, le système renvoie toutes les phrases dites sur l'onglet React (`UserControlReact.cs`) jusqu'à la présence d'un mot d'arrêt.
+  Lorsque la reconnaissance est activée, le système renvoie toutes les phrases dites sur l'onglet React (`UserControlReact.cs`) jusqu'à la présence d'un mot d'arrêt.
 
   Ces mots clés sont présent dans un fichier de [configuration](WindowsFormsApp1/Config/configFile). Le nom de la personne est représentée par la variable **USERNAME** et Les mots d'arrêts par **STOP_WORDS**.
 
@@ -61,6 +61,21 @@ La synthèse et la reconnaissance vocale sont implémentées via le module `Micr
   Si l'utilisateur lance la reconnaissance de façon manuelle alors la reconnaissance automatique s'arrête. Elle reprend dès qu'un mot d'arrêt est prononcé.
 
 ### Prédiction et API
+
+Les prédictions sont basées sur le modèle français de BERT, camemBERT et sont effectuées sous l'idée d'un mask, autrement dit, d'une phrase à trous. 
+
+Pour avoir accès à la prédiction, il faut lancer le script python API.py. Celui-ci lancera l'API de prédiction de mots sur localhost:5001/api/predictNext.
+Cette prédiction prend en compte deux paramètres, prise en compte dans la fonction **nextWord(text, number_Of_Predictions):**. 
+
+Le texte **text** est celui dont on veut prédire la suite. Un espace à la fin de la phrase en cours indiquera de prédire le prochain mot, si il n'y a pas d'espace, les lettres avant le dernier espace permettront de filtrer sur la prédiction. 
+Exemple : "j' aime " va prédire le prochain mot après "j'aime". "j' aime d" va prédire le prochain mot après "j'aime" commencer par la lettre "d".
+
+Le nombre de prédictions **number_Of_Predictions** donnera le nombre de mots prédit. Ce paramètre peut réduire la rapidité de la prédiction.
+
+L'appel à l'API dans l'application se fait à travers la fonction **GetPredict(String sentence)** qui se trouve dans `UserControlReact.cs`
+Cet appel est effectué de manière POST où on envoie la phrase en cours à l'API et celle-ci nous retourne une liste avec pour chaque élément, une liste [mot prédit, tag associé au mot prédit]. Le tag étant (sujet, verbe, ...).
+
+Le rajout des mots obtenus de l'API se fait à travers la fonction **finalSentence_TextChanged** disponible dans `Form1.cs`.
 
 ### Améliorations possible
 
