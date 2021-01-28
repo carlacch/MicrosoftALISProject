@@ -75,7 +75,7 @@ Le nombre de prédictions **number_Of_Predictions** donnera le nombre de mots pr
 L'appel à l'API dans l'application se fait à travers la fonction **GetPredict(String sentence)** qui se trouve dans `UserControlReact.cs`
 Cet appel est effectué de manière POST où on envoie la phrase en cours à l'API et celle-ci nous retourne une liste avec pour chaque élément, une liste [mot prédit, tag associé au mot prédit]. Le tag étant (sujet, verbe, ...).
 
-Le rajout des mots obtenus de l'API se fait à travers la fonction **finalSentence_TextChanged** disponible dans `Form1.cs`.
+Le rajout des mots obtenus de l'API dans l'application se fait à travers la fonction **finalSentence_TextChanged** disponible dans `Form1.cs`.
 
 ### Améliorations possible
 
