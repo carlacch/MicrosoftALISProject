@@ -4,7 +4,10 @@ Le Locked-In Syndrome (LIS) est une maladie neurologique rare qui survient gén�
 
 Ce projet, initié par Microsoft en collaboration avec l’association ALIS, a pour objectif de faciliter la communication d’une personne LIS avec un interlocuteur physique grâce à de l’Intelligence Artificielle. Pour cela, une solution de type clavier prédictif a été imaginée. L’application réalisée vise à  détecter les phrases prononcées par l’interlocuteur et proposer différents thèmes ainsi que leurs mots associés afin de permettre à l’utilisateur de composer une phrase beaucoup plus rapidement que les solutions existantes actuellement.
 
+[Vidéo de présentation](https://youtu.be/bIFolgTEQ3Q)
+
 Voici notre interface ergonomique pour la Communication Alternative Augmentée afin d'aider les personnes atteintes du Locked In Syndrome.
+[Vidéo de démonstration](https://www.youtube.com/watch?v=2d9ZHSDi-6o)
 
 ### Installation
 
