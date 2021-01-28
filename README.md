@@ -48,9 +48,9 @@ La synthèse et la reconnaissance vocale sont implémentées via le module `Micr
     ![getSPeech_function](WindowsFormsApp1/Images/demo/getSpeech_function.png)
 
   L'execution de cette méthode se fait sous deux formes:
-  1. Automatique - Ce type de reconnaissance est lancé dès le lancement de l'application et écoute de façon passive l'utilisateur. Si il prononce, le nom de la personne atteinte du LIS alors le système s'active.
+  * Automatique - Ce type de reconnaissance est lancé dès le lancement de l'application et écoute de façon passive l'utilisateur. Si il prononce, le nom de la personne atteinte du LIS alors le système s'active.
   
-  2. Manuel - L'utilisateur lance la reconnaissance en cliquant sur le bouton **Ecouter**
+  * Manuel - L'utilisateur lance la reconnaissance en cliquant sur le bouton **Ecouter**
 
   Losrque la reconnaissance est activée, le système renvoie toutes les phrases dites sur l'onglet React (`UserControlReact.cs`) jusqu'à la présence d'un mot d'arrêt.
 
